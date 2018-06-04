@@ -1,0 +1,36 @@
+body {
+  background: #006400;
+  font-family: 'Alegreya Sans SC';
+}
+
+a{
+  color: white;
+}
+
+#gift{
+  font-weight: bold;
+}
+
+#icons{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+section{
+  border: 5px;
+  border-style: solid;
+  color: white;
+}
+
+basic-padding{
+  padding: 10px;
+}
+
+.blue{
+    -webkit-transition: all .5s ease;
+    background-color: #0275d8;
+}
+.tra{
+    -webkit-transition: all .5s ease;
+    background-color: rgba(0,0,0,0.3);
+}
