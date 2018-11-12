@@ -16,25 +16,25 @@ $(document).ready(function() {
 
 	$('#togbt').click(function() {
 		if(!tog){
-			$(navbarToggler).addClass('bg-dark');
+			$(navbarToggler).addClass('bg-warning');
 			tog = true;
 		}
 		else {
-			$(navbarToggler).removeClass('bg-dark');
+			$(navbarToggler).removeClass('bg-warning');
 			tog = false;
 			}
 });
 
 	function contrae() {
     $(navBar).animate({'height': "60px"}, 100);
-    $(navBar).addClass('bg-dark');
-		$(navbarToggler).addClass('bg-dark');
+    $(navBar).addClass('bg-warning');
+		$(navbarToggler).addClass('bg-warning');
   }
 
 	function expande() {
     $(navBar).animate({'height': "90px"}, 100);
-    $(navBar).removeClass('bg-dark');
-		$(navbarToggler).removeClass('bg-dark');
+    $(navBar).removeClass('bg-warning');
+		$(navbarToggler).removeClass('bg-warning');
 	}
 
   setInterval(function(){
@@ -45,12 +45,12 @@ $(document).ready(function() {
       blink = true;
       gift.css('color', 'red');
     }
-  }, 700);
+  }, 300);
 
 	setInterval(function() {
 		if(userScrolled) {
 			userScrolled = false;
-			if($(window).scrollTop() > 70) {
+			if($(window).scrollTop() > 150) {
 				if(!past) {
 					past = true;
 					contrae();
@@ -69,7 +69,7 @@ $(document).ready(function() {
 	{
   "particles": {
     "number": {
-      "value": 50,
+      "value": 80,
       "density": {
         "enable": true,
         "value_area": 800
