@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>José Sanchez</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/particles.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script type="text/javascript" src="/test/wp-content/themes/child/script/jquery.jcarousel.min.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAkTzwWLOKFmQAopwFqNoximqLk9UF51Qw",
+            authDomain: "fccportfolio86.firebaseapp.com",
+            databaseURL: "https://fccportfolio86.firebaseio.com",
+            projectId: "fccportfolio86",
+            storageBucket: "fccportfolio86.appspot.com",
+            messagingSenderId: "443926135838"
+        };
+        firebase.initializeApp(config);
+    </script>
+</head>
+
+<body>
+    <div class="flex-container">
+
+        <div style="order: 1">
+            <div id="particles-js" style="background-color: rgb(0, 27, 71)">
+                <div class="panel text-center animated animatedFadeInUp fadeInUp">
+                    <h1>Under construction</h1>
+                    <h2>Hi stranger</h2>
+                    <p>This is my Freecodecamp personal portfolio project.</p>
+                </div>
+
+                <nav class="navbar navbar-expand-md fixed-top" id="navb">
+                    <a class="navbar-brand" href="#">JS</a>
+                    <button id="togbt" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                        <svg class="navbar-toggler-icon" id="icons" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                            <path d="M4 8 L28 8 M4 16 L28 16 M4 24 L28 24" />
+                        </svg>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarToggler">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="#about">About</a>
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                            <a class="nav-link" href="#contact">Contact</a>
+                            <a class="nav-link" style="font-weight: bold" id="gift" target="_blank" href="http://goo.gl/WP1VdH">FREE GIFT</a>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <span id="icons" data-toggle="popover" data-placement="bottom" data-content="sanchezpepe97@gmail.com">
+											<svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+												<path d="M2 26 L30 26 30 6 2 6 Z M2 6 L16 16 30 6" />
+											</svg>
+										</span>
+                            <a id="icons" target="_blank" href="https://twitter.com/SanchezPepe8">
+                                <svg viewBox="0 0 64 64" width="32" height="32">
+                                    <path fill="white" stroke-width="0" d="M60 16 L54 17 L58 12 L51 14 C42 4 28 15 32 24 C16 24 8 12 8 12 C8 12 2 21 12 28 L6 26 C6 32 10 36 17 38 L10 38 C14 46 21 46 21 46 C21 46 15 51 4 51 C37 67 57 37 54 21 Z" />
+                                </svg>
+                            </a>
+                            <a id="icons" target="_blank" href="https://github.com/SanchezPepe">
+                                <svg viewBox="0 0 64 64" width="32" height="32">
+                                    <path fill="white" stroke-width="0" d="M32 0 C14 0 0 14 0 32 0 53 19 62 22 62 24 62 24 61 24 60 L24 55 C17 57 14 53 13 50 13 50 13 49 11 47 10 46 6 44 10 44 13 44 15 48 15 48 18 52 22 51 24 50 24 48 26 46 26 46 18 45 12 42 12 31 12 27 13 24 15 22 15 22 13 18 15 13 15 13 20 13 24 17 27 15 37 15 40 17 44 13 49 13 49 13 51 20 49 22 49 22 51 24 52 27 52 31 52 42 45 45 38 46 39 47 40 49 40 52 L40 60 C40 61 40 62 42 62 45 62 64 53 64 32 64 14 50 0 32 0 Z" />
+                                </svg>
+                            </a>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+
+        <section id="about" style="order: 2">
+            <h3>About</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta iste molestias vel commodi, quae quaerat ex numquam. Consectetur corporis explicabo, qui labore, repellat dignissimos illo molestias maxime nisi a consequuntur? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta iste molestias vel commodi, quae quaerat ex numquam. Consectetur corporis explicabo, qui labore, repellat dignissimos illo molestias maxime nisi a consequuntur? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta iste molestias vel commodi, quae quaerat ex numquam. Consectetur corporis explicabo, qui labore, repellat dignissimos illo molestias maxime nisi a consequuntur? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta iste molestias vel commodi, quae quaerat ex numquam. Consectetur corporis explicabo, qui labore, repellat dignissimos illo molestias maxime nisi a consequuntur?
+            </p>
+        </section>
+
+        <footer id="ft" class="text-center bg-warning" style="order: 3">
+            <p class="text-white" id="tx">Texto de prueba</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>
