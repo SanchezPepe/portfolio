@@ -3,22 +3,33 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="script.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <script src="https://www.vantajs.com/vendor/three.r92.min.js"></script>
+    <script src="https://www.vantajs.com/dist/vanta.dots.min.js"></script>
     <title>José Sánchez</title>
     <style>
         #navbarMenu {
             padding-top: 5px;
         }
     </style>
+    <script>
+        setTimeout(function () {
+            VANTA.DOTS({
+                el: "#vanta",
+                color: 0xffffff,
+                color2: 0x336e,
+                backgroundColor: 0x336e
+            })
+        }, 5)
+    </script>
 </head>
 
 <body onload="blink()">
-    <section class="hero is-link is-fullheight">
+    <section id="vanta" class="hero is-fullheight is-black">
         <div class="hero-head">
             <header class="navbar">
                 <div class="navbar-brand">
@@ -73,7 +84,7 @@
         <div class="hero-body">
             <div class="container has-text-centered">
                 <h1 class="title is-size-2">José Sánchez</h1>
-                <h2 class="subtitle is-size-4">This is my personal portfolio</h2>
+                <h2 class="subtitle is-size-4">Personal portfolio</h2>
             </div>
         </div>
 
