@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <title>FCC: Landing Page</title>
+    <style>
+        body {
+            font-family: 'Lato';
+            width: 100%;
+        }
+
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: navajowhite;
+            padding-bottom: 1em;
+            /* Full width */
+        }
+
+        main{
+            text-align: center;
+        }
+
+        #intro{
+            text-align: center !important;
+            padding: 1em 0 2em 0;
+        }
+
+        #info{
+            text-align: justify;
+            padding: 1em 4em 1em 4em;
+        }
+
+        #header-img {
+            height: 3em;
+        }
+
+        #nav-bar {
+            display: flex;
+            margin: 0 0 0 auto;
+        }
+
+        #nav-bar a {
+            margin: 0 1em 0 1em;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #logo {
+            display: flex;
+            margin-left: 10px;
+            margin: 0 0 0 2em;
+            align-items: center;
+        }
+
+        #media {
+            margin: 1em 3em 1em 3em;
+            text-align: center;
+        }
+
+        #submit {
+            height: 2em;
+            width: 5em;
+            border-radius: 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+            font-size: 1em;
+        }
+
+        #email{
+            height: 2em;
+            width: 15em;
+            border-radius: 10px;
+            margin-right: 2em;
+            margin-bottom: 5em;
+            text-align: center;
+        }
+
+        @media (max-width: 650px) {
+            header {
+                text-align: center;
+            }
+
+            #nav-bar,
+            #logo {
+                width: 100%;
+                justify-content: center;
+                margin: 0 0 0 0;
+            }
+
+            main {
+                margin-top: 129.09px;
+            }
+
+            #video {
+                width: 300px;
+                height: 150px;
+            }
+        }
+
+        @media (min-width: 650px) {
+            main {
+                margin-top: 85.09px;
+            }
+            #video {
+                width: 600px;
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div id="logo">
+            <img src="https://bit.ly/2SabiTf" alt="logo" id="header-img">
+            <h3 id="name"><strong>Some Company</strong></h3>
+        </div>
+        <nav id="nav-bar">
+            <a href="#some" class="nav-link">Some Info</a>
+            <a href="#more" class="nav-link">More Info</a>
+            <a href="#even-more" class="nav-link">Even more info</a>
+        </nav>
+    </header>
+    <main>
+        <div id="info">
+            <h2 id="intro">Some information about your products/services</h2>
+            <div id="some">
+                <h3>Some Info</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mauris sem, mattis in arcu sed,
+                    ornare
+                    tempor lorem. Aenean non nisl luctus, malesuada augue sed, dignissim velit. Morbi ac arcu
+                    rutrum,
+                    malesuada magna quis, condimentum sem. Quisque scelerisque vel nisl eu eleifend. Aliquam ornare
+                    finibus
+                    placerat.
+                </p>
+            </div>
+            <div id="more">
+                <h3>More Info</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mauris sem, mattis in arcu sed,
+                    ornare
+                    tempor lorem. Aenean non nisl luctus, malesuada augue sed, dignissim velit. Morbi ac arcu
+                    rutrum,
+                    malesuada magna quis, condimentum sem. Quisque scelerisque vel nisl eu eleifend. Aliquam ornare
+                    finibus
+                    placerat.
+                </p>
+            </div>
+            <div id="even-more">
+                <h3>Even more info</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mauris sem, mattis in arcu sed,
+                    ornare
+                    tempor lorem. Aenean non nisl luctus, malesuada augue sed, dignissim velit. Morbi ac arcu
+                    rutrum,
+                    malesuada magna quis, condimentum sem. Quisque scelerisque vel nisl eu eleifend. Aliquam ornare
+                    finibus
+                    placerat.
+                </p>
+            </div>
+        </div>
+        <div id="media">
+            <h3>Here's a sample video</h3>
+            <iframe id="video" src="https://www.youtube.com/embed/a_426RiwST8" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>"
+        </div>
+
+        <div id="form-container">
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <h4>Contact Us!</h4>
+                <input id="email" name="email" type="email" placeholder="Your Email" required>
+                <input id="submit" type="submit" value="Send" />
+            </form>
+        </div>
+    </main>
+
+</body>
+
+<!-- FreeCodeCamp Test Suite -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
