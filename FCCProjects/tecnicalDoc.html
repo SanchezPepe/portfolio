@@ -14,21 +14,9 @@
             font-family: 'Lato';
         }
 
-        a,
-        ul {
-            text-decoration: none;
-            list-style-type: none;
-            padding: 0;
-            color: white;
-            font-family: 'Lato' !important;
-        }
-
-        #main-section {
-            width: 100%;
-        }
-
         main {
             overflow-y: scroll;
+            background-color: #84B59F;
         }
 
         header {
@@ -43,21 +31,40 @@
             text-align: center;
         }
 
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav li {
+            padding: 1em;
+            background-color: #44AE7F;
+        }
+
+        ul {
+            padding: 0;
+        }
+
         nav {
             overflow-y: scroll;
-
+            background-color: #46F2A9;
         }
 
         object {
             border: solid black;
             width: 100%;
+            height: 90%;
+        }
+
+        p {
+            font-size: 1.5em;
         }
 
         #obj {
             padding: 0 2em 0 2em;
-            display: flex;
             justify-content: center;
             height: 85%;
+            font-weight: bold;
         }
 
         @media (min-width: 600px) {
@@ -91,29 +98,6 @@
             }
         }
 
-        .content {
-            padding: 0 18px;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.2s ease-out;
-            background-color: black;
-        }
-
-        .collapsible {
-            background-color: #777;
-            color: white;
-            cursor: pointer;
-            padding: 18px;
-            width: 100%;
-            border: none;
-            text-align: left;
-            outline: none;
-            font-size: 15px;
-        }
-
-        .collapsible:hover {
-            background-color: #555;
-        }
 
         /* width */
         ::-webkit-scrollbar {
@@ -134,6 +118,13 @@
         ::-webkit-scrollbar-thumb:hover {
             background: #555;
         }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+        }
     </style>
 </head>
 
@@ -143,45 +134,69 @@
             <h3>Bulma Documentation Page</h3>
         </header>
         <ul>
-            <li>
-                <button class="collapsible"><a>About</a></button>
-                <ul class="content">
-                    <li><a class="nav-link" href="#What_is_bulma?">What is Bulma?</a></li>
-                    <li><a class="nav-link" href="#Getting_Started">Getting Started</a></li>
-                    <li><a class="nav-link" href="#About">About</a></li>
-                </ul>
-            </li>
-            <li class="collapsible">
-                <a class="nav-link" href="#Overview">Overview</a></li>
-            <li class="collapsible">
-                <a class="nav-link" href="#Columns">Columns</a></li>
-            <li class="collapsible">
-                <a class="nav-link" href="#Layout">Layout</a></li>
-            <li class="collapsible">
-                <a class="nav-link" href="#Form">Form</a></li>
-            <li class="collapsible">
-                <a class="nav-link" href="#Elements">Elements</a></li>
-            <li class="collapsible">
-                <a class="nav-link" href="#Components">Components</a></li>
+            <li><a class="nav-link" href="#What_is_bulma?">What is Bulma?</a></li>
+            <li><a class="nav-link" href="#Getting_Started">Getting Started</a></li>
+            <li><a class="nav-link" href="#Overview">Overview</a></li>
+            <li><a class="nav-link" href="#Columns">Columns</a></li>
+            <li><a class="nav-link" href="#Layout">Layout</a></li>
+            <li><a class="nav-link" href="#Form">Form</a></li>
+            <li><a class="nav-link" href="#Elements">Elements</a></li>
+            <li><a class="nav-link" href="#Components">Components</a></li>
         </ul>
     </nav>
     <main id="main-doc">
         <section id="What_is_bulma?" class="main-section">
             <header>What is bulma?</header>
             <div id="obj">
-                <object type="text/html" data="https://bulma.io/documentation/form/">
-                </object>
+                <p>Bulma is a free, open source CSS framework based on Flexbox and built with Sass. It's 100%
+                    responsive, fully modular, and available for free.</p>
+
+                <p> Bulma is used by more than 150,000 developers.</p>
+                <img src="https://scotch-res.cloudinary.com/image/upload/dpr_3,w_350,q_auto:good,f_auto/media/1/yLMMK5K4TtG724ZH3lzV_tY7koYa.png"
+                    alt="">
+                <p>So easy to learn
+                    Get a design started within minutes</p>
+                <p>The simplest grid system
+                    Just add columns, they will resize themselves</p>
+                <p>No JavaScript required
+                    CSS only, so it integrates in any JS environment</p>
+                <p>Fullscreen vertical centering
+                    Include any content you want, it's always centered</p>
+                <p>So quick to customize
+                    Simply set your own Sass variables before importing Bulma</p>
             </div>
         </section>
         <hr>
         <section id="Getting_Started" class="main-section">
             <header>Getting Started</header>
             <div id="obj">
+                <p>There are several ways to get started with Bulma. You can either:</p>
+                <ol>
+                    <li>use npm to install the Bulma package</li>
+                    <li>use the cdnjs CDN to link to the Bulma stylesheet</li>
+                    <li>use the GitHub repository to get the latest development version</li>
+                </ol>
+
+                <p>Ways to add it to your project </p>
+                <ol>
+                    <li>NPM:
+                        <code>npm install bulma</code>
+                    </li>
+                    <li>CDN: Add the following tag to your HTML file
+                        <code>link rel="stylesheet"
+                            href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css></code>
+                    </li>
+                    <li>Download from the <a href="https://github.com/jgthms/bulma/tree/master/css">repository</a></li>
+                </ol>
+
+                <p>Examples</p>
+                <code>This is a code example</code><br>
+                <code>This is a code example</code><br>
+                <code>This is a code example</code><br>
+
+            </div>
         </section>
         <hr>
-        <section id="About" class="main-section">
-            <header>About</header>
-        </section>
         <section id="Overview" class="main-section">
             <header>Overview</header>
             <div id="obj">
@@ -234,21 +249,6 @@
 <!-- FreeCodeCamp Test Suite -->
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 <script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
-
-    for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function () {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.maxHeight) {
-                content.style.maxHeight = null;
-            } else {
-                content.style.maxHeight = content.scrollHeight + "px";
-            }
-        });
-    }
-
     var mainWidth = document.getElementById('main-doc').offsetWidth;
     var mainHeight = document.getElementById('main-doc').offsetHeight;
     var sections = document.querySelectorAll(".main-section");
