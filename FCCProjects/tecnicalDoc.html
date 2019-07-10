@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <title>FCC: Technical Documentation Page</title>
+    <style>
+        html,
+        body {
+            height: 99%;
+            font-family: 'Lato';
+        }
+
+        a,
+        ul {
+            text-decoration: none;
+            list-style-type: none;
+            padding: 0;
+            color: white;
+            font-family: 'Lato' !important;
+        }
+
+        #main-section {
+            width: 100%;
+        }
+
+        main {
+            overflow-y: scroll;
+        }
+
+        header {
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 1em 0 1em 0;
+        }
+
+        nav header {
+            font-size: 1em;
+            text-align: center;
+        }
+
+        nav {
+            overflow-y: scroll;
+
+        }
+
+        object {
+            border: solid black;
+            width: 100%;
+        }
+
+        #obj {
+            padding: 0 2em 0 2em;
+            display: flex;
+            justify-content: center;
+            height: 85%;
+        }
+
+        @media (min-width: 600px) {
+            body {
+                display: flex;
+            }
+
+            nav {
+                width: 20%;
+                float: left;
+            }
+
+            main {
+                width: 80%;
+                float: right;
+                border: solid 1px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                display: inline;
+            }
+
+            nav {
+                width: 100%;
+            }
+
+            main {
+                width: 100%;
+            }
+        }
+
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: black;
+        }
+
+        .collapsible {
+            background-color: #777;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .collapsible:hover {
+            background-color: #555;
+        }
+
+        /* width */
+        ::-webkit-scrollbar {
+            width: 7.5px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>
+            <h3>Bulma Documentation Page</h3>
+        </header>
+        <ul>
+            <li>
+                <button class="collapsible"><a>About</a></button>
+                <ul class="content">
+                    <li><a class="nav-link" href="#What_is_bulma?">What is Bulma?</a></li>
+                    <li><a class="nav-link" href="#Getting_Started">Getting Started</a></li>
+                    <li><a class="nav-link" href="#About">About</a></li>
+                </ul>
+            </li>
+            <li class="collapsible">
+                <a class="nav-link" href="#Overview">Overview</a></li>
+            <li class="collapsible">
+                <a class="nav-link" href="#Columns">Columns</a></li>
+            <li class="collapsible">
+                <a class="nav-link" href="#Layout">Layout</a></li>
+            <li class="collapsible">
+                <a class="nav-link" href="#Form">Form</a></li>
+            <li class="collapsible">
+                <a class="nav-link" href="#Elements">Elements</a></li>
+            <li class="collapsible">
+                <a class="nav-link" href="#Components">Components</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section id="What_is_bulma?" class="main-section">
+            <header>What is bulma?</header>
+            <div id="obj">
+                <object type="text/html" data="https://bulma.io/documentation/form/">
+                </object>
+            </div>
+        </section>
+        <hr>
+        <section id="Getting_Started" class="main-section">
+            <header>Getting Started</header>
+            <div id="obj">
+        </section>
+        <hr>
+        <section id="About" class="main-section">
+            <header>About</header>
+        </section>
+        <section id="Overview" class="main-section">
+            <header>Overview</header>
+            <div id="obj">
+                <object type="text/html" data="https://bulma.io/documentation/overview/">
+                </object>
+            </div>
+        </section>
+        <hr>
+        <section id="Columns" class="main-section">
+            <header>Columns</header>
+            <div id="obj">
+                <object type="text/html" data="https://bulma.io/documentation/columns/">
+                </object>
+            </div>
+        </section>
+        <hr>
+        <section id="Layout" class="main-section">
+            <header>Layout</header>
+            <div id="obj">
+                <object type="text/html" data="https://bulma.io/documentation/layout/">
+                </object>
+            </div>
+        </section>
+        <hr>
+        <section id="Form" class="main-section">
+            <header>Form</header>
+            <div id="obj">
+                <object type="text/html" data="https://bulma.io/documentation/form/">
+                </object>
+            </div>
+        </section>
+        <hr>
+        <section id="Elements" class="main-section">
+            <header>Elements</header>
+            <div id="obj">
+                <object type="text/html" data="https://bulma.io/documentation/elements/">
+                </object>
+            </div>
+        </section>
+        <hr>
+        <section id="Components" class="main-section">
+            <header>Components</header>
+            <div id="obj">
+                <object type="text/html" data="https://bulma.io/documentation/components/">
+                </object>
+            </div>
+        </section>
+    </main>
+</body>
+<!-- FreeCodeCamp Test Suite -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
+
+    var mainWidth = document.getElementById('main-doc').offsetWidth;
+    var mainHeight = document.getElementById('main-doc').offsetHeight;
+    var sections = document.querySelectorAll(".main-section");
+    for (var i = 0; i < sections.length; i++) {
+        sections[i].style.width = mainWidth + "px";
+        sections[i].style.height = mainHeight + "px";
+    }
+</script>
+
+</html>
