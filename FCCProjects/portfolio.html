@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <title>José Sánchez FCC Personal Portfolio</title>
+    <style>
+        html, body{
+            font-family: 'Lato';
+        }
+
+        #navbar {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            border: solid black;
+        }
+
+        .icon{
+            padding: 0.5em;
+        }
+
+        main{
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            z-index: -1;
+        }
+
+        ol{
+            list-style: none;
+        }
+
+        li a{
+            text-decoration: none;
+            padding: 0.5em;
+            color: black;
+            font-weight: bold;
+        }
+        
+        #welcome-section {
+            border: solid red;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media (max-width: 650px) {
+        }
+
+        @media (min-width: 650px) {
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <ol>
+                <li>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ol>
+            <span class="icon">
+                <a id="profile-link" target="_blank" href="https://github.com/sanchezpepe">
+                    <i class="fas fa-2x fab fa-github"></i>
+                </a>
+            </span>
+        </nav>
+    </header>
+    <main>
+        <section id="welcome-section">
+            <h1>José Sánchez</h1>
+            <h3>Welcome to my personal portfolio</h3>
+        </section>
+        <section id="projects">
+            <div class="project-tile">
+                <a href="https://sanchezpepe.github.io/LaboratorioWeb/recursos/Contenedores/index.html">HTML
+                    Containers</a>
+            </div>
+        </section>
+
+        <section id="contact">
+
+        </section>
+
+    </main>
+
+</body>
+
+<!-- FreeCodeCamp Test Suite -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
