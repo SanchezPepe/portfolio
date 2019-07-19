@@ -29,12 +29,13 @@
         }
 
         #profile-link {
-            padding: 0.5em 1em 0.5em 0.5em;
+            padding: 0.5em 1em 0.5em 1em;
             color: white !important;
         }
 
         ol {
             list-style: none;
+            margin-right: 1em;
         }
 
         li a {
@@ -44,13 +45,51 @@
             font-weight: bold;
         }
 
-        #welcome-section, .card {
+        #left {
+            display: flex;
+            align-items: center;
+            font-size: 1.15em;
+            font-weight: bold;
+            color: white;
+            margin-left: 1em;
+        }
+
+        #welcome-section,
+        .card {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             width: 100%;
             height: 100vh;
+        }
+
+        #welcome-section {
+            background-color: #3CAEA3;
+        }
+
+        #projects {
+            background-color: #F6D55C;
+        }
+
+        #contact {
+            background-color: #ED553B;
+        }
+
+        #grid {
+            width: 80%;
+            height: 80%;
+            display: grid;
+            grid-row-gap: 1em;
+            grid-column-gap: 1em;
+            grid-template-columns: auto auto auto;
+        }
+
+        .project-tile {
+            width: 100%;
+            height: auto;
+            background-color: #20639B;
+            border: 0.35em solid white;
         }
 
         @media (max-width: 650px) {}
@@ -83,35 +122,47 @@
 <body>
     <header>
         <nav id="navbar">
+            <div id="left">
+                <p>José Sánchez</p>
+                <a id="profile-link" target="_blank" href="https://github.com/sanchezpepe">
+                    <i class="fas fa-2x fab fa-github"></i>
+                </a>
+            </div>
             <ol>
                 <li>
-                    <a href="#about">About</a>
+                    <a href="#welcome-section">Home</a>
                     <a href="#projects">Projects</a>
                     <a href="#contact">Contact</a>
                 </li>
             </ol>
-            <a id="profile-link" target="_blank" href="https://github.com/sanchezpepe">
-                <i class="fas fa-2x fab fa-github"></i>
-            </a>
             </span>
         </nav>
     </header>
 
     <main>
         <section id="welcome-section">
-            <h1>José Sánchez</h1>
-            <h3>Welcome to my personal portfolio</h3>
+            <h1 style="font-size: 2.5em;">José Sánchez</h1>
+            <h3 style="font-size: 1.5em; margin-top: 0;">
+                Computer Engineering Student 🇲🇽 
+            </h3>
         </section>
 
         <section id="projects" class="card">
-            <div class="project-tile">
-                <a href="https://sanchezpepe.github.io/LaboratorioWeb/recursos/Contenedores/index.html">HTML
-                    Containers</a>
+            <div id="grid">
+                <div class="project-tile">
+                    <a href="https://sanchezpepe.github.io/LaboratorioWeb/recursos/Contenedores/index.html">A</a>
+                </div>
+                <div class="project-tile">
+                </div>
+                <div class="project-tile">
+                </div>
+                <div class="project-tile">
+                </div>
             </div>
         </section>
 
         <section id="contact" class="card">
-            <h1>This is the footer</h1>
+            <h1>Contact</h1>
 
         </section>
 
@@ -121,5 +172,5 @@
 
 <!-- FreeCodeCamp Test Suite -->
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
+<script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
 </html>
