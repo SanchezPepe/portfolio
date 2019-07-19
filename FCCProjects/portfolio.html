@@ -78,23 +78,47 @@
 
         #grid {
             width: 80%;
-            height: 80%;
+            height: 70%;
             display: grid;
-            grid-row-gap: 1em;
-            grid-column-gap: 1em;
-            grid-template-columns: auto auto auto;
+            grid-row-gap: 5%;
+            grid-column-gap: 5%;
+            grid-template-columns: 30% 30% 30%;
+            grid-template-rows: 45% 45%;
         }
 
         .project-tile {
             width: 100%;
-            height: auto;
+            height: 100%;
             background-color: #20639B;
             border: 0.35em solid white;
+            max-width: 100%;
         }
 
-        @media (max-width: 650px) {}
+        .project-info {
+            display: flex;
+            flex-direction: column;
+            word-wrap: break-word;
+            padding: 1em;
+        }
 
-        @media (min-width: 650px) {}
+        .project-info p,
+        a {
+            text-decoration: none;
+            color: white !important;
+            word-wrap: break-word;
+        }
+
+        @media (max-width: 650px) {
+            #grid{
+                height: 90%;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .project-tile{
+                margin-top: 1em;
+            }
+        }
 
         /* width */
         ::-webkit-scrollbar {
@@ -143,20 +167,46 @@
         <section id="welcome-section">
             <h1 style="font-size: 2.5em;">José Sánchez</h1>
             <h3 style="font-size: 1.5em; margin-top: 0;">
-                Computer Engineering Student 🇲🇽 
+                Computer Engineering Student 🇲🇽
             </h3>
         </section>
 
         <section id="projects" class="card">
             <div id="grid">
                 <div class="project-tile">
-                    <a href="https://sanchezpepe.github.io/LaboratorioWeb/recursos/Contenedores/index.html">A</a>
+                    <div class="project-info">
+                        <p>
+                            Hola esto es una pruena para ver si se
+                        </p>
+                        <a href="https://sanchezpepe.github.io/LaboratorioWeb/recursos/Contenedores/index.html">A</a>
+                    </div>
                 </div>
                 <div class="project-tile">
+                    <div class="project-info">
+                        <a href="https://sanchezpepe.github.io/LaboratorioWeb/recursos/Contenedores/index.html">A</a>
+                    </div>
                 </div>
                 <div class="project-tile">
+                    <div class="project-info">
+                        <a href="https://sanchezpepe.github.io/LaboratorioWeb/recursos/Contenedores/index.html">A</a>
+                    </div>
                 </div>
                 <div class="project-tile">
+                    <div class="project-info">
+                        <a href="https://sanchezpepe.github.io/LaboratorioWeb/recursos/Contenedores/index.html">A</a>
+                    </div>
+                </div>
+
+                <div class="project-tile">
+                    <div class="project-info">
+                        <a href="https://sanchezpepe.github.io/LaboratorioWeb/recursos/Contenedores/index.html">A</a>
+                    </div>
+                </div>
+
+                <div class="project-tile">
+                    <div class="project-info">
+                        <a href="https://sanchezpepe.github.io/LaboratorioWeb/recursos/Contenedores/index.html">A</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -173,4 +223,5 @@
 <!-- FreeCodeCamp Test Suite -->
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+
 </html>
