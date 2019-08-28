@@ -20,6 +20,7 @@
             background-color: white;
             border: solid 4px;
             text-align: center;
+            margin: 0.5em;
         }
 
         .card_img {
@@ -27,8 +28,17 @@
             height: 40px;
         }
 
+        .hero-head,
         #navbarMenu {
-            background-color: #004905;
+            background-color: #20639B;
+        }
+
+        #projects {
+            background-color: #F6D55C;
+        }
+
+        #current {
+            background-color: #ED553B;
         }
     </style>
     <script>
@@ -36,15 +46,15 @@
             VANTA.DOTS({
                 el: "#vanta",
                 color: 0xffffff,
-                color2: 0x4905,
-                backgroundColor: 0x4905
+                color2: 0x20639B,
+                backgroundColor: 0x20639B
             })
         }, 5)
     </script>
 </head>
 
 <body onload="blink()">
-    <section id="vanta" class="hero is-fullheight is-success">
+    <section id="vanta" class="hero is-fullheight is-info">
         <div class="hero-head">
             <header class="container navbar">
                 <div class="navbar-brand">
@@ -106,7 +116,7 @@
         </div>
     </section>
 
-    <section id="projects" class="hero is-fullheight is-link section">
+    <section id="projects" class="hero is-fullheight section">
         <div class="container">
             <h2 class="title">Projects 💻</h2>
             <div class="columns" style="padding-top: 30px">
@@ -156,7 +166,8 @@
                         <a style="padding: 15px;" target="_blank" href="FCCProjects/fccProjects.html">
                             <i class="fas fa-2x fa-link"></i>
                         </a>
-                        <a style="padding: 15px;" target="_blank" href="https://github.com/SanchezPepe/portfolio/tree/master/FCCProjects">
+                        <a style="padding: 15px;" target="_blank"
+                            href="https://github.com/SanchezPepe/portfolio/tree/master/FCCProjects">
                             <i class="fas fa-2x fab fa-github"></i>
                         </a>
                     </div>
@@ -165,8 +176,23 @@
                             FreeCodeCamp program involves 1,400 hours of interactive coding challenges and web
                             development projects.
                         </strong>
-
                     </p>
+                </div>
+                <div class="column card">
+                    <strong class="has-text-black is-size-4">Password Manager</strong>
+                    <div style="padding: 15px;">
+                        <a style="padding: 15px;" target="_blank"
+                            href="https://github.com/SanchezPepe/Password-Manager">
+                            <i class="fas fa-2x fab fa-github"></i>
+                        </a>
+                    </div>
+                    <p style="padding: 15px;">
+                        <strong>
+                            Password manager written in C# using SHA256 encryption
+                        </strong>
+                    </p>
+                </div>
+                <div class="column">
                 </div>
             </div>
 
@@ -215,15 +241,15 @@
             <div class="column">
                 <ol>
                     <h2 class="subtitle"><strong>About 🇲🇽 🌮</strong></h2>
-                    <p>
+                    <p class="has-text-justified">
                         I'm a seventh semester student of Computer Engineering at ITAM.
-                        I like Software Development and interested in Information Security, Business Intelligence DevOps and Blockchain.
+                        I like Software Development and I'm interested in Information Security and Blockchain.
                         Always willing to learn.
                     </p>
                 </ol>
             </div>
             <div class="column">
-                <h2 class="subtitle"><strong> Contact me </strong></h2>
+                <h2 class="subtitle"><strong> Contact</strong></h2>
                 <div id="icons">
                     <span class="icon is-large">
                         <a target="_blank" href="https://medium.com/@sanchezpepe">
