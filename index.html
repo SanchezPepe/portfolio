@@ -9,25 +9,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
     <title>José Sánchez </title>
     <!-- fonts -->
+    <!-- https://fonts.google.com/specimen/Lora -->
+    <!-- https://fonts.google.com/specimen/Playfair+Display -->
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
     <style>
-        /**
-            https://fonts.google.com/specimen/Lora
-            https://fonts.google.com/specimen/Playfair+Display
-        */
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            overflow-y: hidden;
+        }
+
         h1 {
             font-family: 'Playfair Display', serif;
             font-size: 450% !important;
             font-weight: 700;
-        }
-
-        .border-padding {
-            padding: 44px 56px 44px 56px;
-            border: 7px solid white;
-
+            color: white;
         }
 
         h2 {
@@ -35,95 +37,104 @@
             font-size: 350% !important;
             letter-spacing: -1px;
             font-weight: 400;
-            line-height: 57px;
+            line-height: 50px;
+            color: white;
+
         }
 
-        .normal-text{
+        a{
+            text-decoration: none;
+            color: white !important;
+        }
+
+        .border-padding {
+            padding: 44px 56px 44px 56px;
+            border: 7px solid white;
+        }
+
+        .normal-text {
             font-family: 'Lato', sans-serif;
             font-size: 20px;
             font-weight: 500;
+            color: white;
         }
 
-        #mainSection {
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            background-image: url(https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80);
-        }
-
-        .right-corner {
-            position: fixed;
-            bottom: 0;
-            right: 0;
-            padding: 0.5%;
-            font-size: 15px;
-            font-family: 'Lato', sans-serif;
+        .container {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
 
-<body>
-    <section id="mainSection" class="hero is-dark is-fullheight">
-        <div class="hero-head">
-            <nav class="navbar">
-                <div class="container">
-                    <div class="navbar-brand">
-                    </div>
-                </div>
-            </nav>
-        </div>
-
-        <div class="hero-body">
-            <div class="container has-text-centered">
-                <div class="columns">
-                    <div class="column is-half">
-                        <h1 class="border-padding">José Sánchez</h1>
-                        <br>
-                        <h2 class="has-text-left">Software Engineer in progress</h2>
-                        <br>
-                        <p class="has-text-left normal-text">
-                            I'm a recent graduate from Computer Engineering at Instituto Tecnológico Autónomo de México
-                            - ITAM.
-                        </p><br>
-                        <p class="has-text-left normal-text">
-                            Improving my skills in Software Development and interested in Information Security and
-                            Blockchain.
-                        </p>
-                        <br>
-                        <div>
-                            <span class="icon is-large">
-                                <a target="_blank" href="https://github.com/sanchezpepe">
-                                    <i class="fas fa-2x fab fa-github"></i>
-                                </a>
-                            </span>
-                            <span class="icon is-large">
-                                <a target="_blank" href="https://www.linkedin.com/in/sanchezjose8">
-                                    <i class="fab fa-2x fa-linkedin"></i>
-                                </a>
-                            </span>
-                            <span class="icon is-large">
-                                <a target="_blank" href="https://medium.com/@sanchezpepe">
-                                    <i class="fab fa-2x fa-medium"></i>
-                                </a>
-                            </span>
-                            <span class="icon is-large">
-                                <a target="_top" href="mailto:sanchezpepe97@gmail.com">
-                                    <i class="fas fa-2x fa-envelope"></i>
-                                </a>
-                            </span>
-                        </div>
-
-                    </div>
-
+<body id="vanta">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half">
+                <h1 class="border-padding">José Sánchez</h1>
+                <br>
+                <h2 class="has-text-left">Software Engineer in progress</h2>
+                <br>
+                <p class="has-text-left normal-text">
+                    I'm a recent graduate from Computer Engineering at Instituto Tecnológico Autónomo de México
+                    - ITAM.
+                </p><br>
+                <p class="has-text-left normal-text">
+                    Improving my skills in Software Development and interested in Information Security and
+                    Blockchain.
+                </p>
+                <br>
+                <div id="icons">
+                    <span class="icon is-large">
+                        <a target="_blank" href="https://github.com/sanchezpepe">
+                            <i class="fas fa-2x fab fa-github"></i>
+                        </a>
+                    </span>
+                    <span class="icon is-large">
+                        <a target="_blank" href="https://www.linkedin.com/in/sanchezjose8">
+                            <i class="fab fa-2x fa-linkedin"></i>
+                        </a>
+                    </span>
+                    <span class="icon is-large">
+                        <a target="_blank" href="https://medium.com/@sanchezpepe">
+                            <i class="fab fa-2x fa-medium"></i>
+                        </a>
+                    </span>
+                    <span class="icon is-large">
+                        <a target="_top" href="mailto:sanchezpepe97@gmail.com">
+                            <i class="fas fa-2x fa-envelope"></i>
+                        </a>
+                    </span>
                 </div>
             </div>
+
+            <div class="column">
+                <img src="https://assets-ouch.icons8.com/download/477/e2130db6-c561-4330-8060-af74745f790b.svg?filename=pixeltrue-web-development.svg"
+                    alt="">
+            </div>
         </div>
+    </div>
 
 
-        <p class="right-corner">Got this photo from <a target="_blank"
-                href="https://unsplash.com/@emilep"><b>Emile Perron</b></a> at <a target="_blank"
-                href="https://unsplash.com/"><b>Unsplash</b></a></p>
-    </section>
+    <script>
+        VANTA.NET({
+            el: "#vanta",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 300.00,
+            minWidth: 300.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x3b3b3b,
+            backgroundColor: 0x0,
+            maxDistance: 20.00,
+            spacing: 18.00
+        })
+    </script>
 </body>
 
 </html>
