@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="vanta">
 
 <head>
     <meta charset="UTF-8">
@@ -27,12 +27,13 @@
             overflow-y: hidden;
             text-decoration: none;
             color: white !important;
+            height: 100%;
         }
 
         h1,
         h2,
-        p {
-            margin: 5% 5% 0% 5%;
+        p, #icons {
+            margin-top: 5%;
         }
 
         #name {
@@ -45,10 +46,12 @@
         #job-title {
             font-weight: 400;
             line-height: normal;
+            text-align: left;
         }
 
         .normal-text {
             font-family: 'Lato', sans-serif;
+            text-align: left;
         }
 
         /* If the screen size is 451px wide or more, set the font-size of <div> to 80px */
@@ -78,26 +81,54 @@
 
             .normal-text {
                 font-size: 17.5px;
+                text-align: justify;
+
             }
         }
     </style>
 </head>
 
-<body id="vanta">
-    <div class="container">
-
+<body class="hero is-fullheight">
+    <div class="hero-body container">
         <div class="columns is-vcentered">
             <div class="column is-half">
                 <h1 id="name">José Sánchez</h1>
-                <h2 id="job-title" class="has-text-left">Junior Software Engineer</h2>
-                <p class="has-text-left normal-text">
-                    I'm a Computer Engineering student at Instituto Tecnológico Autónomo de México
-                    - ITAM.
-                </p>
-                <p class="has-text-left normal-text">
-                    Currently, improving my skills in Software Development and interested in Blockchain Technology.
-                </p>
-
+                <div class="columns is-vcentered is-mobile">
+                    <div class="column">
+                        <h2 id="job-title">Junior Software Engineer</h2>
+                        <p class="has-text-left normal-text">
+                            I'm a Computer Engineering student at Instituto Tecnológico Autónomo de México
+                            - ITAM.
+                        </p>
+                        <p class="has-text-left normal-text">
+                            Currently, improving my skills in Software Development and interested in Blockchain
+                            Technology.
+                        </p>
+                    </div>
+                    <!-- ICONS -->
+                    <div id="icons" class="column is-one-fifth has-text-centered">
+                        <span class="icon is-large">
+                            <a target="_blank" href="https://github.com/sanchezpepe">
+                                <i class="fas fa-2x fab fa-github"></i>
+                            </a>
+                        </span>
+                        <span class="icon is-large">
+                            <a target="_blank" href="https://www.linkedin.com/in/sanchezjose8">
+                                <i class="fab fa-2x fa-linkedin"></i>
+                            </a>
+                        </span>
+                        <span class="icon is-large">
+                            <a target="_blank" href="https://medium.com/@sanchezpepe">
+                                <i class="fab fa-2x fa-medium"></i>
+                            </a>
+                        </span>
+                        <span class="icon is-large">
+                            <a target="_top" href+="mailto:sanchezpepe97@gmail.com">
+                                <i class="fas fa-2x fa-envelope"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
             </div>
 
             <div class="column">
@@ -105,33 +136,7 @@
                     alt="">
             </div>
         </div>
-
-        <div class="has-text-centered">
-            <span class="icon is-large">
-                <a target="_blank" href="https://github.com/sanchezpepe">
-                    <i class="fas fa-2x fab fa-github"></i>
-                </a>
-            </span>
-            <span class="icon is-large">
-                <a target="_blank" href="https://www.linkedin.com/in/sanchezjose8">
-                    <i class="fab fa-2x fa-linkedin"></i>
-                </a>
-            </span>
-            <span class="icon is-large">
-                <a target="_blank" href="https://medium.com/@sanchezpepe">
-                    <i class="fab fa-2x fa-medium"></i>
-                </a>
-            </span>
-            <span class="icon is-large">
-                <a target="_top" href="mailto:sanchezpepe97@gmail.com">
-                    <i class="fas fa-2x fa-envelope"></i>
-                </a>
-            </span>
-        </div>
-
     </div>
-
-
 
     <script>
         VANTA.NET({
