@@ -3,278 +3,152 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://www.flaticon.es/premium-icon/icons/svg/2115/2115955.svg">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
-    <script src="https://www.vantajs.com/vendor/three.r92.min.js"></script>
-    <script src="https://www.vantajs.com/dist/vanta.dots.min.js"></script>
-    <title>José Sánchez</title>
+    <title>José Sánchez </title>
+    <!-- fonts -->
+    <!-- https://fonts.google.com/specimen/Lora -->
+    <!-- https://fonts.google.com/specimen/Playfair+Display -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
     <style>
-        #navbarMenu {
-            padding-top: 5px;
+        html,
+        body,
+        a {
+            font-family: 'Playfair Display', serif;
+            height: 100%;
+            width: 100%;
+            overflow-y: hidden;
+            text-decoration: none;
+            color: white !important;
         }
 
-        .card {
-            background-color: white;
-            border: solid 4px;
+        h1,
+        h2,
+        p {
+            margin: 5% 5% 0% 5%;
+        }
+
+        #name {
+            font-weight: 700;
             text-align: center;
-            margin: 0.5em;
+            padding: 5% 2% 5% 2%;
+            border: 5px solid white;
         }
 
-        .card_img {
-            width: 200px;
-            height: 40px;
+        #job-title {
+            font-weight: 400;
+            line-height: normal;
         }
 
-        .hero-head,
-        #navbarMenu {
-            background-color: #20639B;
+        .normal-text {
+            font-family: 'Lato', sans-serif;
         }
 
-        #projects {
-            background-color: #F6D55C;
+        /* If the screen size is 451px wide or more, set the font-size of <div> to 80px */
+        @media screen and (min-width: 451px) {
+            #name {
+                font-size: 60px;
+            }
+
+            #job-title {
+                font-size: 40px;
+            }
+
+            .normal-text {
+                font-size: 20px;
+            }
         }
 
-        #current {
-            background-color: #ED553B;
+        /* If the screen size is 450px wide or less, set the font-size of <div> to 30px */
+        @media screen and (max-width: 450px) {
+            #name {
+                font-size: 40px;
+            }
+
+            #job-title {
+                font-size: 30px;
+            }
+
+            .normal-text {
+                font-size: 17.5px;
+            }
         }
     </style>
-    <script>
-        setTimeout(function () {
-            VANTA.DOTS({
-                el: "#vanta",
-                color: 0xffffff,
-                color2: 0x20639B,
-                backgroundColor: 0x20639B
-            })
-        }, 5)
-    </script>
 </head>
 
-<body onload="blink()">
-    <section id="vanta" class="hero is-fullheight is-info">
-        <div class="hero-head">
-            <header class="container navbar">
-                <div class="navbar-brand">
-                    <a href="index.html" class="navbar-item">
-                        <p class="subtitle is-size-4">José Sánchez</p>
-                    </a>
-                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
-                        data-target="navbarMenu">
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                    </a>
-                </div>
+<body id="vanta" class="hero">
+    <div class="container">
 
-                <div id="navbarMenu" class="navbar-menu">
-                    <div class="navbar-start">
-                        <a class="navbar-item">Home</a>
-                        <a class="navbar-item" href="#projects">Projects</a>
-                        <a class="navbar-item" href="#current">Currently<a>
-                                <a class="navbar-item" id="gift" target="_blank"
-                                    href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><strong>FREE GIFT</strong></a>
-                    </div>
+        <div class="columns is-vcentered">
+            <div class="column is-half">
+                <h1 id="name">José Sánchez</h1>
+                <h2 id="job-title" class="has-text-left">Junior Software Engineer</h2>
+                <p class="has-text-left normal-text">
+                    I'm a Computer Engineering student at Instituto Tecnológico Autónomo de México
+                    - ITAM.
+                </p>
+                <p class="has-text-left normal-text">
+                    Currently, improving my skills in Software Development and interested in Blockchain Technology.
+                </p>
 
-                    <div class="navbar-end">
-                        <div class="navbar-item">
-                            <span class="icon is-large">
-                                <a target="_blank" href="https://medium.com/@sanchezpepe">
-                                    <i class="fab fa-2x fa-medium"></i>
-                                </a>
-                            </span>
-                            <span class="icon is-large">
-                                <a target="_blank" href="https://www.linkedin.com/in/sanchezjose8">
-                                    <i class="fab fa-2x fa-linkedin"></i>
-                                </a>
-                            </span>
-                            <span class="icon is-large">
-                                <a target="_blank" href="https://github.com/sanchezpepe">
-                                    <i class="fas fa-2x fab fa-github"></i>
-                                </a>
-                            </span>
-                            <span class="icon is-large">
-                                <a target="_top" href="mailto:sanchezpepe97@gmail.com">
-                                    <i class="fas fa-2x fa-envelope"></i>
-                                </a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </header>
-        </div>
-
-        <!-- Hero content: will be in the middle -->
-        <div class="hero-body">
-            <div class="container has-text-centered">
-                <h1 class="title is-size-2">José Sánchez</h1>
-                <h2 class="subtitle is-size-4">Computer Engineering Student</h2>
-                <h2 class="subtitle is-size-5">Personal portfolio</h2>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="hero is-fullheight section">
-        <div class="container">
-            <h2 class="title">Projects 💻</h2>
-            <div class="columns" style="padding-top: 30px">
-                <div class="column card">
-                    <strong class="has-text-black is-size-4">Web-Lab</strong>
-                    <div style="padding: 15px;">
-                        <a style="padding: 15px;" target="_blank" href="https://sanchezpepe.github.io/LaboratorioWeb/">
-                            <i class="fas fa-2x fa-link"></i>
-                        </a>
-                        <a style="padding: 15px;" target="_blank" href="https://github.com/SanchezPepe/LaboratorioWeb">
-                            <i class="fas fa-2x fab fa-github"></i>
-                        </a>
-                    </div>
-                    <p style="padding: 15px;">
-                        <strong>Some exercises from the Web Development Club at ITAM </strong>
-                    </p>
-                </div>
-                <div class="column card">
-                    <strong class="has-text-black is-size-4">CryptocurrencyToMXN</strong>
-                    <div style="padding: 15px;">
-                        <a style="padding: 15px;" target="_blank"
-                            href="https://github.com/SanchezPepe/CryptocurrencyToMXN">
-                            <i class="fas fa-2x fab fa-github"></i>
-                        </a>
-                    </div>
-                    <p style="padding: 15px;">
-                        <strong>Android application to check Bitcoin, Ethereum, Ripple and Bitcoincash prices in real
-                            time and perform conversions to Mexican Pesos </strong>
-                    </p>
-                </div>
-                <div class="column card">
-                    <strong class="has-text-black is-size-4">Spark Streaming</strong>
-                    <div style="padding: 15px;">
-                        <a style="padding: 15px;" target="_blank" href="https://github.com/SanchezPepe/Twitter_Spark">
-                            <i class="fas fa-2x fab fa-github"></i>
-                        </a>
-                    </div>
-                    <p style="padding: 15px;">
-                        <strong>Spark Streaming using Twitter API</strong>
-                    </p>
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column card">
-                    <strong class="has-text-black is-size-4">FreeCodeCamp Projects</strong>
-                    <div style="padding: 15px;">
-                        <a style="padding: 15px;" target="_blank" href="FCCProjects/fccProjects.html">
-                            <i class="fas fa-2x fa-link"></i>
-                        </a>
-                        <a style="padding: 15px;" target="_blank"
-                            href="https://github.com/SanchezPepe/portfolio/tree/master/FCCProjects">
-                            <i class="fas fa-2x fab fa-github"></i>
-                        </a>
-                    </div>
-                    <p style="padding: 15px;">
-                        <strong>
-                            FreeCodeCamp program involves 1,400 hours of interactive coding challenges and web
-                            development projects.
-                        </strong>
-                    </p>
-                </div>
-                <div class="column card">
-                    <strong class="has-text-black is-size-4">Password Manager</strong>
-                    <div style="padding: 15px;">
-                        <a style="padding: 15px;" target="_blank"
-                            href="https://github.com/SanchezPepe/Password-Manager">
-                            <i class="fas fa-2x fab fa-github"></i>
-                        </a>
-                    </div>
-                    <p style="padding: 15px;">
-                        <strong>
-                            Password manager written in C# using SHA256 encryption
-                        </strong>
-                    </p>
-                </div>
-                <div class="column">
-                </div>
             </div>
 
-        </div>
-    </section>
-
-    <section id="current" class="hero is-fullheight is-primary section">
-        <div class="container">
-            <h2 class="title">Currently ⌨ 👾</h2>
-            <h3 class="subtitle"><strong>Some skills I'm learning in my spare time</strong></h3>
-            <div class="columns" style="padding-top: 30px">
-                <div class="column card">
-                    <strong class="has-text-black is-size-4">Vue.js</strong>
-                    <div class="columns is-vcentered" style="padding-top: 15px;">
-                        <p class="column" style="padding: 15px;">
-                            <strong><a href="https://vuejs.org">Vue.js</a> is an open-source JavaScript framework for
-                                building user interfaces and single-page applications.</strong>
-                        </p>
-                        <div class="column" style="padding: 15px;">
-                            <img id="card_img" style="width: auto; height: 150px;"
-                                src="https://cdn-images-1.medium.com/max/672/1*GrnZQhGidCAjnfE7CUyzcA.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="column card">
-                    <strong class="has-text-black is-size-4">Flutter</strong>
-                    <div class="columns is-vcentered" style="padding-top: 15px;">
-                        <p class="column" style="padding: 15px;">
-                            <strong><a href="https://flutter.dev">Flutter</a> is an open-source mobile application
-                                development framework created by Google. It is used to develop native applications for
-                                Android and iOS</strong>
-                        </p>
-                        <div class="column" style="padding: 15px;">
-                            <img id="card_img" style="width: auto; height: 175px;"
-                                src="https://flutterdart.files.wordpress.com/2018/03/cropped-google-flutter-logo.png?w=240"
-                                alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer hero is-black">
-        <div class="columns" style="padding-left: 70px; padding-right: 70px;">
             <div class="column">
-                <ol>
-                    <h2 class="subtitle"><strong>About 🇲🇽 🌮</strong></h2>
-                    <p class="has-text-justified">
-                        I'm a seventh semester student of Computer Engineering at ITAM.
-                        I like Software Development and I'm interested in Information Security and Blockchain.
-                        Always willing to learn.
-                    </p>
-                </ol>
+                <img src="https://assets-ouch.icons8.com/download/477/e2130db6-c561-4330-8060-af74745f790b.svg?filename=pixeltrue-web-development.svg"
+                    alt="">
             </div>
-            <div class="column">
-                <h2 class="subtitle"><strong> Contact</strong></h2>
-                <div id="icons">
-                    <span class="icon is-large">
-                        <a target="_blank" href="https://medium.com/@sanchezpepe">
-                            <i class="fab fa-2x fa-medium"></i>
-                        </a>
-                    </span>
-                    <span class="icon is-large">
-                        <a target="_blank" href="https://www.linkedin.com/in/sanchezjose8">
-                            <i class="fab fa-2x fa-linkedin"></i>
-                        </a>
-                    </span>
-                    <span class="icon is-large">
-                        <a target="_blank" href="https://github.com/sanchezpepe">
-                            <i class="fas fa-2x fab fa-github"></i>
-                        </a>
-                    </span>
-                    <span class="icon is-large">
-                        <a target="_top" href="mailto:sanchezpepe97@gmail.com">
-                            <i class="fas fa-2x fa-envelope"></i>
-                        </a>
-                    </span>
-                </div>
-            </div>
-    </footer>
+        </div>
+
+        <div class="has-text-centered">
+            <span class="icon is-large">
+                <a target="_blank" href="https://github.com/sanchezpepe">
+                    <i class="fas fa-2x fab fa-github"></i>
+                </a>
+            </span>
+            <span class="icon is-large">
+                <a target="_blank" href="https://www.linkedin.com/in/sanchezjose8">
+                    <i class="fab fa-2x fa-linkedin"></i>
+                </a>
+            </span>
+            <span class="icon is-large">
+                <a target="_blank" href="https://medium.com/@sanchezpepe">
+                    <i class="fab fa-2x fa-medium"></i>
+                </a>
+            </span>
+            <span class="icon is-large">
+                <a target="_top" href="mailto:sanchezpepe97@gmail.com">
+                    <i class="fas fa-2x fa-envelope"></i>
+                </a>
+            </span>
+        </div>
+
+    </div>
+
+
+
+    <script>
+        VANTA.NET({
+            el: "#vanta",
+            mouseControls: false,
+            touchControls: false,
+            gyroControls: false,
+            minHeight: 300.00,
+            minWidth: 300.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x3b3b3b,
+            backgroundColor: 0x0,
+            maxDistance: 20.00,
+            spacing: 18.00
+        })
+    </script>
 </body>
 
 </html>
