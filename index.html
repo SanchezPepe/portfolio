@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" id="vanta">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width-30, initial-scale=1.0">
     <link rel="icon" href="https://www.flaticon.es/premium-icon/icons/svg/2115/2115955.svg">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
@@ -19,58 +19,55 @@
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
     <style>
         html,
-        body,
-        a {
+        body {
             font-family: 'Playfair Display', serif;
             height: 100%;
             width: 100%;
             overflow-y: hidden;
-            text-decoration: none;
             color: white !important;
             height: 100%;
+            background-color: black;
         }
 
-        h1,
-        h2,
-        p, #icons {
-            margin-top: 5%;
+        a {
+            font-family: 'Lato', sans-serif;
+            color: white;
+            text-decoration: underline;
+
         }
 
         #name {
             font-weight: 700;
             text-align: center;
-            padding: 5% 2% 5% 2%;
+            padding: 5% 0% 5% 2%;
             border: 5px solid white;
+            margin: 5% 5% 2% 5%;
         }
 
         #job-title {
             font-weight: 400;
             line-height: normal;
             text-align: left;
+            margin: 0% 8% 1% 8%;
+        }
+
+        #icons {
+            text-align: left;
+            margin-left: 8%;
         }
 
         .normal-text {
             font-family: 'Lato', sans-serif;
-            text-align: left;
+            text-align: justify;
+            margin: 0% 10% 2% 8%;
         }
 
-        /* If the screen size is 451px wide or more, set the font-size of <div> to 80px */
-        @media screen and (min-width: 451px) {
-            #name {
-                font-size: 60px;
-            }
-
-            #job-title {
-                font-size: 40px;
-            }
-
-            .normal-text {
-                font-size: 20px;
-            }
+        .column{
+            padding: 0% !important;
         }
 
-        /* If the screen size is 450px wide or less, set the font-size of <div> to 30px */
-        @media screen and (max-width: 450px) {
+        /* If the screen size is 501px wide or more, set the font-size of <div> to 80px */
+        @media screen and (min-width: 501px) {
             #name {
                 font-size: 40px;
             }
@@ -80,61 +77,99 @@
             }
 
             .normal-text {
-                font-size: 17.5px;
-                text-align: justify;
+                font-size: 20px;
+            }
+        }
 
+        /* If the screen size is 500px wide or less, set the font-size of <div> to 30px */
+        @media screen and (max-width: 500px) {
+            #name {
+                font-size: 30px;
+            }
+
+            #job-title {
+                font-size: 20px;
+            }
+
+            .normal-text {
+                font-size: 15px;
+            }
+
+            .column {
+                padding-left: 0%;
             }
         }
     </style>
 </head>
 
-<body class="hero is-fullheight">
-    <div class="hero-body container">
-        <div class="columns is-vcentered">
-            <div class="column is-half">
-                <h1 id="name">José Sánchez</h1>
-                <div class="columns is-vcentered is-mobile">
-                    <div class="column">
-                        <h2 id="job-title">Junior Software Engineer</h2>
-                        <p class="has-text-left normal-text">
-                            I'm a Computer Engineering student at Instituto Tecnológico Autónomo de México
-                            - ITAM.
-                        </p>
-                        <p class="has-text-left normal-text">
-                            Currently, improving my skills in Software Development and interested in Blockchain
-                            Technology.
-                        </p>
-                    </div>
-                    <!-- ICONS -->
-                    <div id="icons" class="column is-one-fifth has-text-centered">
-                        <span class="icon is-large">
-                            <a target="_blank" href="https://github.com/sanchezpepe">
-                                <i class="fas fa-2x fab fa-github"></i>
-                            </a>
-                        </span>
-                        <span class="icon is-large">
-                            <a target="_blank" href="https://www.linkedin.com/in/sanchezjose8">
-                                <i class="fab fa-2x fa-linkedin"></i>
-                            </a>
-                        </span>
-                        <span class="icon is-large">
-                            <a target="_blank" href="https://medium.com/@sanchezpepe">
-                                <i class="fab fa-2x fa-medium"></i>
-                            </a>
-                        </span>
-                        <span class="icon is-large">
-                            <a target="_top" href+="mailto:sanchezpepe97@gmail.com">
-                                <i class="fas fa-2x fa-envelope"></i>
-                            </a>
-                        </span>
-                    </div>
-                </div>
+<body class="container">
+    <div class="columns is-vcentered">
+        <div class="column is-half">
+            <h1 id="name">José Sánchez</h1>
+            <h2 id="job-title">Junior Software Engineer</h2>
+            <div id="icons">
+                <span class="icon is-large">
+                    <a target="_blank" href="https://github.com/sanchezpepe">
+                        <i class="fas fa-2x fab fa-github"></i>
+                    </a>
+                </span>
+                <span class="icon is-large">
+                    <a target="_blank" href="https://www.linkedin.com/in/sanchezjose8">
+                        <i class="fab fa-2x fa-linkedin"></i>
+                    </a>
+                </span>
+                <span class="icon is-large">
+                    <a target="_blank" href="https://medium.com/@sanchezpepe">
+                        <i class="fab fa-2x fa-medium"></i>
+                    </a>
+                </span>
+                <span class="icon is-large">
+                    <a target="_top" href+="mailto:sanchezpepe97@gmail.com">
+                        <i class="fas fa-2x fa-envelope"></i>
+                    </a>
+                </span>
             </div>
 
-            <div class="column">
-                <img src="https://assets-ouch.icons8.com/download/477/e2130db6-c561-4330-8060-af74745f790b.svg?filename=pixeltrue-web-development.svg"
-                    alt="">
+            <p class="normal-text">
+                I'm a Computer Engineering student at Instituto Tecnológico Autónomo de México
+                - ITAM.
+            </p>
+            <p class="normal-text">
+                Some areas I'm interested in:
+            </p>
+            <div class="content normal-text">
+                <ul>
+                    <li>Web Develpment</li>
+                    <li>Blockchain Technology </li>
+                    <li>Information Security</li>
+                </ul>
             </div>
+
+            <p class="has-text-left normal-text">
+                Projects
+            </p>
+
+            <div class="content normal-text">
+                <ul>
+                    <li><a href="https://github.com/SanchezPepe/Ecobici_Analysis" target="_blank">Ecobici Data
+                            Analysis</a>:
+                        Analyzed data to identify high-demand areas and times to propose the creation of new stations in
+                        Mexico City
+                        city using the MapReduce programming model.</li>
+                    <li>
+                        <a href="https://github.com/SanchezPepe/CryptocurrencyToMXN"
+                            target="_blank">CryptocurrencyToMXN</a>:
+                        Built an Android application using Bitso Exchange API to reduce mobile data consumption and
+                        fetch Bitcoin,
+                        Ethereum, Ripple, and Bitcoin Cash prices.</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div id="vanta" class="column is-half">
+            <img src="https://assets-ouch.icons8.com/download/477/e2130db6-c561-4330-8060-af74745f790b.svg?filename=pixeltrue-web-development.svg"
+                alt="">
         </div>
     </div>
 
