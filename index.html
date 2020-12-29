@@ -7,7 +7,7 @@
     <link rel="icon" href="https://www.flaticon.es/premium-icon/icons/svg/2115/2115955.svg">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
-    <title>José Sánchez </title>
+    <title>José Sánchez</title>
     <!-- fonts -->
     <!-- https://fonts.google.com/specimen/Lora -->
     <!-- https://fonts.google.com/specimen/Playfair+Display -->
@@ -21,12 +21,11 @@
         html,
         body {
             font-family: 'Playfair Display', serif;
-            height: 100%;
-            width: 100%;
-            overflow-y: hidden;
             color: white !important;
             height: 100%;
             background-color: black;
+            overflow-y: scroll;
+            overflow-x: hidden;
         }
 
         a {
@@ -62,9 +61,6 @@
             margin: 0% 10% 2% 8%;
         }
 
-        .column{
-            padding: 0% !important;
-        }
 
         /* If the screen size is 501px wide or more, set the font-size of <div> to 80px */
         @media screen and (min-width: 501px) {
@@ -94,10 +90,19 @@
             .normal-text {
                 font-size: 15px;
             }
+        }
 
-            .column {
-                padding-left: 0%;
-            }
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge and Firefox */
+        body {
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
         }
     </style>
 </head>
