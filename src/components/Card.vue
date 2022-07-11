@@ -1,14 +1,12 @@
 <template>
   <div @mouseover="flip = true" @mouseleave="flip = false">
-    <transition name="fade">
-      <p class="absolute w-full h-full bg-blue-500" v-if="!flip">{{ front }}</p>
-    </transition>
+      <p class="w-full h-full text-center bg-blue-500" v-if="!flip">
+        {{ front }}
+      </p>
 
-    <transition name="fade">
-      <p class="absolute w-full h-full bg-green-500" v-if="flip">
+      <p class="w-full h-full text-center bg-green-500" v-if="flip" >
         {{ back }}
       </p>
-    </transition>
   </div>
 </template>
 
@@ -28,13 +26,3 @@ export default {
 };
 </script>
 
-<style>
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s;
-}
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
-}
-</style>

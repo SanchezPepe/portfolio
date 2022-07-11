@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-2">
+  <div class="grid sm:grid-cols-2">
     <Card front="FRONT" back="BACK"/>
     <Card front="FRONT" back="BACK"/>
     <Card front="FRONT" back="BACK"/>
