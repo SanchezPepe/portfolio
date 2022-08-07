@@ -4,7 +4,8 @@
     <Card front="FRONT" back="BACK"/>
     <Card front="FRONT" back="BACK"/>
     <Card front="FRONT" back="BACK"/>
-
+    <Card front="FRONT" back="BACK"/>
+    <Card front="FRONT" back="BACK"/>
   </div>
 </template>
 

@@ -4,9 +4,9 @@ import Projects from "./components/Projects.vue"
 </script>
 
 <template>
-<div class="grid md:grid-cols-2 h-screen">
-  <Info class="border border-solid border-black"/>
-  <Projects class="border border-solid border-black"/>
+<div class="grid lg:grid-cols-2 h-screen dark:bg-slate-900 dark:text-white  font-serif ">
+  <Info/>
+  <Projects/>
 </div>
 
 </template>

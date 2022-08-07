@@ -1,12 +1,20 @@
 <template>
-  <div @mouseover="flip = true" @mouseleave="flip = false">
-      <p class="w-full h-full text-center bg-blue-500" v-if="!flip">
+  <div
+    class="inline-block align-middle text-center"
+    @mouseover="flip = true"
+    @mouseleave="flip = false"
+  >
+    <div class="flex h-full dark:bg-slate-700" v-if="!flip">
+      <div class="m-auto">
         {{ front }}
-      </p>
+      </div>
+    </div>
 
-      <p class="w-full h-full text-center bg-green-500" v-if="flip" >
+    <div class="flex h-full dark:bg-slate-800" v-if="flip">
+      <div class="m-auto">
         {{ back }}
-      </p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -25,4 +33,3 @@ export default {
   },
 };
 </script>
-
