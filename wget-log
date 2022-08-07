@@ -1,0 +1,6 @@
+--2022-08-07 07:22:48--  https://accounts.google.com/signin/oauth/consent/approval?authuser=0
+Resolving accounts.google.com (accounts.google.com)... 74.125.124.84, 2607:f8b0:4001:c19::54
+Connecting to accounts.google.com (accounts.google.com)|74.125.124.84|:443... connected.
+HTTP request sent, awaiting response... 400 Bad Request
+2022-08-07 07:22:48 ERROR 400: Bad Request.
+

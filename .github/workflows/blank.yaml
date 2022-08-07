@@ -2,7 +2,7 @@ name: Build and Deploy Vue.js App
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:
@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@master
+        uses: actions/checkout@main
       - name: Install Dependencies
         run: npm install
       - name: Build
@@ -36,7 +36,7 @@ jobs:
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:	
           repoToken: '${{ secrets.GITHUB_TOKEN }}'	
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_APPITAM  }}'	
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_PORTFOLIO  }}'	
           channelId: live	
           projectId: portfolio
         env:	
