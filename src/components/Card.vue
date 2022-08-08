@@ -11,8 +11,12 @@
     </div>
 
     <div class="flex h-full dark:bg-zinc-800" v-if="flip">
-      <div class="m-auto">
+      <div class="m-auto p-10">
         {{ back }}
+        <br><br>
+        <a target="_blank" :href="url">
+          <font-awesome-icon icon="fa-brands fa-github" size="2x" />
+        </a>
       </div>
     </div>
   </div>
@@ -25,6 +29,7 @@ export default {
   props: {
     front: String,
     back: String,
+    url: String,
   },
   setup() {
     const flip = ref(false);
