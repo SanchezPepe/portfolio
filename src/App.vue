@@ -1,5 +1,5 @@
 <template>
-  <div class="md:flex h-screen w-screen bg-stone-900 text-white font-serif">
+  <div class="md:flex min-h-screen w-screen bg-stone-900 text-white font-serif">
     <!-- Info -->
     <div class="m-auto">
       <div class="lg:px-80 md:px-40 p-10">
@@ -24,10 +24,10 @@
           </p>
 
           <p class="md: mt-5">
-            I'm passionate about technology and like to learn new things. Here's
-            my current top 3:
+            I'm passionate about technology and like to learn new things.
+            Currently, I'm learning:
           </p>
-          <ul class="md:mt-5 ml-10 list-disc te">
+          <ul class="md:mt-5 ml-10 list-disc">
             <li>Cloud Computing</li>
             <li>Web Development</li>
             <li>Machine Learning</li>
@@ -35,6 +35,8 @@
         </div>
 
         <p class="text-xl text-center py-3">
+          Drop me an email at
+          <br />
           <a href="mailto:hola@josesa.dev">hola@josesa.dev</a>
         </p>
 
