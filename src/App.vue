@@ -9,29 +9,21 @@
           José Sánchez
         </p>
 
-        <div class="py-8 md:text-xl text-lg">
-          <p>Hello!</p>
-          <p class="md: mt-2">
-            I'm a Computer Engineer based in Mexico City. I currently work at
-            <strong>Google</strong> as a Technical Solutions Engineer in the
-            AI/ML stack.
+        <div class="py-6 md:text-xl text-lg text-justify">
+          <p class="md: my-5">
+            I'm a highly motivated Computer Engineer passionate about leveraging
+            technology to solve complex problems. With expertise in Software
+            Development and Cloud Computing, I'm always looking for new
+            challenges to push my boundaries and expand my skill set. I
+            currently work at <strong>Google</strong> as a Technical Solutions
+            Engineer in the AI/ML stack.
+            <br v-for="_ in 2" />
+            I strongly believe in the power of collaboration and learning from
+            others, and I'm eager to connect with like-minded professionals who
+            share my vision. With a commitment to lifelong learning, I
+            continuously seek out new opportunities to improve my skills and
+            knowledge
           </p>
-
-          <p class="md: mt-5">
-            Since I started my career, I've been working in different areas like
-            Information Security, Quality Assurance Testing and Front End Web
-            Development with Vue.js.
-          </p>
-
-          <p class="md: mt-5">
-            I'm passionate about technology and like to learn new things.
-            Currently, I'm learning:
-          </p>
-          <ul class="md:mt-5 ml-10 list-disc">
-            <li>Cloud Computing</li>
-            <li>Web Development</li>
-            <li>Machine Learning</li>
-          </ul>
         </div>
 
         <p class="text-xl text-center py-3">
