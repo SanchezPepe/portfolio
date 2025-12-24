@@ -1,0 +1,207 @@
+{
+  "personal": {
+    "name": "José Sánchez Aguilar",
+    "initials": "JS",
+    "title": "Technical Solutions Engineer - AI/ML",
+    "role": "Technical Solutions Engineer - AI/ML",
+    "tagline": "Innovating with AI/ML to create",
+    "taglineHighlight": "impactful technical solutions",
+    "description": "Passionate Technical Solutions Engineer specializing in AI/ML solutions (Vertex AI, Dialogflow, Speech Models) and full-stack development. I provide advanced technical support, lead architectural migrations, and develop scalable digital experiences.",
+    "status": "Open for opportunities",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDLFKcD_fMDgvbKbW5p0vaPFWCU3riDtW6JKbD2Wv4HwOss-fs5__FQnYIWx8wCE0S5FTtfVngRBOdMXzBtXsobOaPHZWDwtuX3fwX6fuMvBipPxQUO9kd-nDVzfAIQlgvFq91qS2hUBhgn5rlsRlpYQngimwKiOR9Zb3ddMrvX_2yP7AvdJy2aFOkc3nVhDHcEqA9ZUwCSneUN6Nr5wppqB7ohUJyI5olHzgxWa4Y7Oazcm_YZN1OT4mIjWpNS_FxCRiWzcDC2ERE",
+    "imageAlt": "Portrait of José Sánchez Aguilar smiling in professional attire"
+  },
+  "navigation": [
+    {
+      "label": "Experience",
+      "href": "#experience"
+    },
+    {
+      "label": "Projects",
+      "href": "#projects"
+    },
+    {
+      "label": "Skills",
+      "href": "#skills"
+    },
+    {
+      "label": "Contact",
+      "href": "#contact"
+    }
+  ],
+  "hero": {
+    "buttons": [
+      {
+        "text": "Contact Me",
+        "href": "#contact",
+        "type": "primary"
+      },
+      {
+        "text": "View GitHub",
+        "href": "https://github.com/josesa-dev",
+        "icon": "code",
+        "type": "secondary"
+      },
+      {
+        "text": "LinkedIn",
+        "href": "https://www.linkedin.com/in/sanchezjoses",
+        "icon": "work",
+        "type": "secondary"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "icon": "terminal",
+    "categories": [
+      {
+        "name": "Web Application Development",
+        "skills": ["HTML", "CSS", "JavaScript", "Vue.js", "Bootstrap", "Bulma", "Tailwind CSS"]
+      },
+      {
+        "name": "Programming Languages",
+        "skills": ["Java", "C#", "SQL", "Python", "Kotlin"]
+      },
+      {
+        "name": "Cloud & AI/ML",
+        "skills": ["GCP", "Firebase", "Vertex AI", "Dialogflow", "Speech Models"]
+      },
+      {
+        "name": "Other",
+        "skills": ["Linux", "Git", "Visual Studio", "Mobile Application Development (Android)", "Stripe API"]
+      }
+    ]
+  },
+  "experience": [
+    {
+      "id": 1,
+      "title": "Technical Solutions Engineer - AI/ML",
+      "company": "Google",
+      "period": "June 2021 - Present",
+      "location": "Mexico City",
+      "description": "Provided advanced support to Google Cloud Premium Customers, developed expertise in GCP AI/ML solutions, collaborated on internal playbooks, and acted as a subject matter expert.",
+      "highlights": [
+        "Provided advanced support to Google Cloud Premium Customers, closing 89 cases and collaborating on 621 over the last year, ensuring timely resolution and customer satisfaction.",
+        "Developed expertise in GCP AI/ML solutions (Vertex Al, Dialogflow, Speech Models) to effectively advocate for customer needs and resolve complex technical challenges.",
+        "This expertise also led to collaborating on internal playbooks and tooling to improve supportability.",
+        "Acted as a subject matter expert, delivering 331 consults to vendor TSRs, enabling efficient issue resolution and reducing product team toil by preventing bug creation."
+      ],
+      "current": true
+    },
+    {
+      "id": 2,
+      "title": "Software Engineer",
+      "company": "Solera",
+      "period": "November 2020 - June 2021",
+      "location": "Mexico City",
+      "description": "Developed and designed new applications using C# and Java, maintained existing applications, and improved internal documentation.",
+      "highlights": [
+        "Developed and designed new applications using C# and Java to meet agreed specifications.",
+        "Maintained existing applications and processes to improve the quality, reliability, and performance of the application as well as suggest recommendations for improvements.",
+        "Improved and updated internal documentation for software development, custom software tools, and system security."
+      ],
+      "current": false
+    },
+    {
+      "id": 3,
+      "title": "Quality Assurance Analyst",
+      "company": "BairesDev",
+      "period": "October 2019 - November 2020",
+      "location": "Mexico City",
+      "description": "Improved test case documentation time, defined and documented test cases, and analyzed end-user requirements.",
+      "highlights": [
+        "Improved the test case documentation time from one day to one hour by creating a web application to design and upload test cases in the test case management system.",
+        "Defined and documented test cases to fulfill system requirements and maintain the product knowledge base.",
+        "Analyzed and tested end-user requirements resulting in finding bugs and proposing possible improvements."
+      ],
+      "current": false
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Cinema Gear Hub",
+      "description": "A user-friendly cinema gear rental platform built with Vue.js and Tailwind CSS, featuring Stripe integration and Firebase backend.",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDKC3AJBVpq783Jr9ZySJ4dHHVqTnVqG_bsIXGwn0Ja7CTb74uvxG61o2lWSOg56wP5-sUZthU0Ddu_5D2JXzki3rQsOn6CdoaceBcLH8YqeaPILP5J0r_9cOA06s121hC4NSa_qgf0VpFWyFqSOAvn2o2n_i0mLwcYI6i6-GzBmoVLtO5bvvAayWUPoEXTkyavLEt_ZLcHD9bvN-23DuN70OsM2XFd31iX0aV0eRXrbina2Pnkmu6xyRZzBso_64lJJAM9McvSh18",
+      "imageAlt": "Image of Cinema Gear Hub project",
+      "technologies": ["Vue.js", "Tailwind CSS", "Firebase", "Stripe API"],
+      "liveUrl": "https://raicen.com",
+      "githubUrl": "#"
+    },
+    {
+      "id": 2,
+      "title": "Web Application for students",
+      "description": "A web app developed for students to plan schedules and track shuttle in real-time using Vue.js, Vuetify, and Firebase.",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDdxztROUXPYxwqFvfcfaafZCROHcq2zkeDIAWZ6yLwcZaKEqApw1bKXf-6m1F_RAFi90to0Qx2KdqoAS5HIP7rAtlNVIO9EypYy4oaayRMBDjYEYrJdfDJOlAQSCdpjfTRmrhc7RKQoutKsNOKUFJ8KaFDTQ1wEu9PKRhEnJz8OFqsGF_NS_pmsjMo9OCOFztAEyye2lGziDTV0ND_t-wSIoe4KHG--SEEX6Qbc4fBA1EgPSZtflHr08t6ORSyQT_vIcL-1eGbUuc",
+      "imageAlt": "Image of student web application project",
+      "technologies": ["Vue.js", "Vuetify", "Firebase", "GitHub Actions"],
+      "liveUrl": "https://appitam.firebaseapp.com",
+      "githubUrl": "#"
+    }
+  ],
+  "certifications": [
+    {
+      "id": 1,
+      "title": "Bachelor of Science in Computer Engineering",
+      "issuer": "Instituto Tecnológico Autónomo de México",
+      "date": "2021",
+      "icon": "school",
+      "iconBgColor": "bg-blue-50 dark:bg-blue-900/30",
+      "iconColor": "text-primary"
+    },
+    {
+      "id": 2,
+      "title": "Associate Cloud Engineer",
+      "issuer": "Google Cloud",
+      "date": "Issued 2022",
+      "icon": "verified",
+      "iconBgColor": "bg-orange-50 dark:bg-orange-900/30",
+      "iconColor": "text-orange-600"
+    }
+  ],
+  "contact": {
+    "title": "Contact",
+    "icon": "contact_mail",
+    "items": [
+      {
+        "id": 1,
+        "icon": "mail",
+        "text": "jjsanchezxa@gmail.com",
+        "href": "mailto:jjsanchezxa@gmail.com"
+      },
+      {
+        "id": 2,
+        "icon": "location_on",
+        "text": "Mexico City",
+        "href": "#"
+      },
+      {
+        "id": 3,
+        "icon": "public",
+        "text": "josesa.dev",
+        "href": "https://josesa.dev"
+      },
+      {
+        "id": 4,
+        "icon": "phone",
+        "text": "+52 443394 6443",
+        "href": "tel:+524433946443"
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2023 José Sánchez Aguilar. All rights reserved.",
+    "social": [
+      {
+        "name": "GitHub",
+        "href": "https://github.com/josesa-dev",
+        "icon": "github"
+      },
+      {
+        "name": "LinkedIn",
+        "href": "https://www.linkedin.com/in/sanchezjoses",
+        "icon": "linkedin"
+      }
+    ]
+  }
+}
