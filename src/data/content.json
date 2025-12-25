@@ -6,11 +6,11 @@
   "personal": {
     "name": "José Sánchez",
     "initials": "JS",
-    "title": "Technical Solutions Engineer - AI/ML",
-    "role": "Technical Solutions Engineer - AI/ML",
-    "tagline": "Innovating with AI/ML to create",
-    "taglineHighlight": "impactful technical solutions",
-    "description": "Passionate Technical Solutions Engineer specializing in AI/ML solutions (Vertex AI, Dialogflow, Speech Models) and full-stack development. I provide advanced technical support, lead architectural migrations, and develop scalable digital experiences.",
+    "title": "Cloud Customer Engineer - SMB Segment",
+    "role": "Cloud Customer Engineer - SMB Segment",
+    "tagline": "Empowering businesses with",
+    "taglineHighlight": "Google Cloud solutions",
+    "description": "Experienced Cloud Customer Engineer for the SMB segment, specializing in Google Cloud solutions. I help small and medium-sized businesses leverage cloud technology to achieve their goals, providing technical guidance, architectural design, and strategic planning.",
     "image": "../assets/portrait.jpeg",
     "imageAlt": "José Sánchez Aguilar portrait"
   },
@@ -92,10 +92,25 @@
   },
   "experience": [
     {
-      "id": 1,
-      "title": "Technical Solutions Engineer - AI/ML",
+      "id": 0,
+      "title": "Cloud Customer Engineer - SMB Segment",
       "company": "Google",
-      "period": "June 2021 - Present",
+      "period": "June 2025 - Present",
+      "location": "Mexico City",
+      "description": "Empowering small and medium-sized businesses (SMBs) to thrive with Google Cloud solutions. I provide expert technical guidance, architectural design, and strategic planning to help clients leverage cloud technology effectively and achieve their business objectives.",
+      "highlights": [
+        "Provide expert technical guidance and strategic planning to SMB clients, ensuring successful adoption and utilization of Google Cloud services.",
+        "Design and implement scalable cloud architectures tailored to the unique needs of SMBs, optimizing for performance, cost, and security.",
+        "Collaborate with sales and product teams to develop and deliver compelling technical presentations and demonstrations for prospective clients.",
+        "Act as a trusted advisor to SMB customers, addressing their technical challenges and guiding them through their cloud transformation journey."
+      ],
+      "current": true
+    },
+    {
+      "id": 1,
+      "title": "Technical Solutions Engineer - AI/ML (Previous Role)",
+      "company": "Google",
+      "period": "June 2021 - May 2025",
       "location": "Mexico City",
       "description": "Provided advanced support to Google Cloud Premium Customers, developed expertise in GCP AI/ML solutions, collaborated on internal playbooks, and acted as a subject matter expert.",
       "highlights": [
@@ -104,7 +119,7 @@
         "This expertise also led to collaborating on internal playbooks and tooling to improve supportability.",
         "Acted as a subject matter expert, delivering 331 consults to vendor TSRs, enabling efficient issue resolution and reducing product team toil by preventing bug creation."
       ],
-      "current": true
+      "current": false
     },
     {
       "id": 2,
