@@ -26,8 +26,7 @@
     {
       "label": "Skills",
       "href": "#skills"
-    },
-
+    }
   ],
   "hero": {
     "buttons": [
@@ -155,7 +154,8 @@
       "date": "2021",
       "icon": "school",
       "iconBgColor": "bg-blue-50 dark:bg-blue-900/30",
-      "iconColor": "text-primary"
+      "iconColor": "text-primary",
+      "link": "#"
     },
     {
       "id": 2,
@@ -164,7 +164,18 @@
       "date": "Issued 2022",
       "icon": "verified",
       "iconBgColor": "bg-orange-50 dark:bg-orange-900/30",
-      "iconColor": "text-orange-600"
+      "iconColor": "text-orange-600",
+      "link": "#"
+    },
+    {
+      "id": 3,
+      "title": "Professional Cloud Architect",
+      "issuer": "Google Cloud",
+      "date": "September 2025",
+      "icon": "verified",
+      "iconBgColor": "bg-emerald-50 dark:bg-emerald-900/30",
+      "iconColor": "text-emerald-600",
+      "link": "#"
     }
   ],
 
