@@ -97,7 +97,7 @@
       "company": "Google",
       "period": "June 2025 - Present",
       "location": "Mexico City",
-      "description": "Empowering small and medium-sized businesses (SMBs) to thrive with Google Cloud solutions. I provide expert technical guidance, architectural design, and strategic planning to help clients leverage cloud technology effectively and achieve their business objectives. I provide expert technical guidance and strategic planning to SMB clients, ensuring successful adoption and utilization of Google Cloud services, design and implement scalable cloud architectures tailored to the unique needs of SMBs, optimizing for performance, cost, and security, collaborate with sales and product teams to develop and deliver compelling technical presentations and demonstrations for prospective clients, and act as a trusted advisor to SMB customers, addressing their technical challenges and guiding them through their cloud transformation journey.",
+      "description": "Empowering SMBs with Google Cloud solutions, providing expert technical guidance, architectural design, and strategic planning for effective cloud adoption and business objective achievement.",
       "current": true
     },
     {
@@ -106,7 +106,7 @@
       "company": "Google",
       "period": "June 2021 - May 2025",
       "location": "Mexico City",
-      "description": "Provided advanced support to Google Cloud Premium Customers, developed expertise in GCP AI/ML solutions, collaborated on internal playbooks, and acted as a subject matter expert. I provided advanced support to Google Cloud Premium Customers, closing 89 cases and collaborating on 621 over the last year, ensuring timely resolution and customer satisfaction. I developed expertise in GCP AI/ML solutions (Vertex Al, Dialogflow, Speech Models) to effectively advocate for customer needs and resolve complex technical challenges. This expertise also led to collaborating on internal playbooks and tooling to improve supportability. I acted as a subject matter expert, delivering 331 consults to vendor TSRs, enabling efficient issue resolution and reducing product team toil by preventing bug creation.",
+      "description": "Provided advanced support to Google Cloud Premium Customers, specializing in GCP AI/ML solutions. Collaborated on internal playbooks, acted as a subject matter expert, and resolved complex technical challenges.",
       "current": false
     },
     {
@@ -115,7 +115,7 @@
       "company": "Solera",
       "period": "November 2020 - June 2021",
       "location": "Mexico City",
-      "description": "Developed and designed new applications using C# and Java, maintained existing applications, and improved internal documentation. I developed and designed new applications using C# and Java to meet agreed specifications, maintained existing applications and processes to improve the quality, reliability, and performance of the application as well as suggest recommendations for improvements, and improved and updated internal documentation for software development, custom software tools, and system security.",
+      "description": "Developed and designed new C# and Java applications, maintained existing software, and enhanced internal documentation for improved quality and reliability.",
       "current": false
     },
     {
@@ -124,7 +124,7 @@
       "company": "BairesDev",
       "period": "October 2019 - November 2020",
       "location": "Mexico City",
-      "description": "Improved test case documentation time, defined and documented test cases, and analyzed end-user requirements. I improved the test case documentation time from one day to one hour by creating a web application to design and upload test cases in the test case management system, defined and documented test cases to fulfill system requirements and maintain the product knowledge base, and analyzed and tested end-user requirements resulting in finding bugs and proposing possible improvements.",
+      "description": "Improved test case documentation, defined test cases for system requirements, and analyzed end-user needs to identify bugs and propose improvements.",
       "current": false
     }
   ],
