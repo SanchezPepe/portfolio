@@ -1,4 +1,8 @@
 {
+  "social_links": {
+    "github": "https://github.com/josesa-dev",
+    "linkedin": "https://www.linkedin.com/in/sanchezjoses"
+  },
   "personal": {
     "name": "José Sánchez",
     "initials": "JS",
@@ -30,11 +34,6 @@
   ],
   "hero": {
     "buttons": [
-      {
-        "text": "Contact Me",
-        "href": "#contact",
-        "type": "primary"
-      },
       {
         "text": "View GitHub",
         "href": "https://github.com/josesa-dev",
@@ -213,12 +212,12 @@
     "social": [
       {
         "name": "GitHub",
-        "href": "https://github.com/SanchezPepe",
+        "href": "https://github.com/josesa-dev",
         "icon": "github"
       },
       {
         "name": "LinkedIn",
-        "href": "https://www.linkedin.com/in/sanchezjose8/",
+        "href": "https://www.linkedin.com/in/sanchezjoses",
         "icon": "linkedin"
       }
     ]
