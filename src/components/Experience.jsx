@@ -12,7 +12,7 @@ const Experience = ({ data }) => {
         {data.experience.map((exp) => (
           <div
             key={exp.id}
-            className="relative pl-8 sm:pl-12 group transition-all bg-white dark:bg-[#1e2736] group-hover:scale-[1.01] group-hover:shadow-lg group-hover:border-primary/30 group-hover:bg-gray-100 dark:group-hover:bg-[#2a374b]"
+            className="relative pl-8 sm:pl-12 group transition-all group-hover:scale-[1.01] group-hover:shadow-lg group-hover:border-primary/30"
           >
             <div className="absolute -left-[9px] top-0 flex size-4 items-center justify-center rounded-full bg-white dark:bg-[#101622] ring-4 ring-white dark:ring-[#101622]">
               <div

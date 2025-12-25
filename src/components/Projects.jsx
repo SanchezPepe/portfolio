@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
 const Projects = ({ data }) => {
   return (
     <section className="scroll-mt-24" id="projects">
       <div className="flex items-center justify-between mb-8">
         <h2 className="text-2xl font-bold text-[#111318] dark:text-white">
-          Featured Projects
+          Side Projects
         </h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -23,15 +23,15 @@ const Projects = ({ data }) => {
             ></div>
             <div className="flex flex-1 flex-col p-6">
               <div className="flex items-center justify-between mb-2">
-                <h3
-                  className="text-lg font-bold text-[#111318] dark:text-white"
-                >
+                <h3 className="text-lg font-bold text-[#111318] dark:text-white">
                   {project.title}
                 </h3>
                 <div className="flex gap-2">
                   <a
                     className="text-gray-400 hover:text-primary transition-colors"
                     href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <span className="material-symbols-outlined text-xl">
                       open_in_new
@@ -40,6 +40,8 @@ const Projects = ({ data }) => {
                   <a
                     className="text-gray-400 hover:text-primary transition-colors"
                     href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <span className="material-symbols-outlined text-xl">
                       code
@@ -47,9 +49,7 @@ const Projects = ({ data }) => {
                   </a>
                 </div>
               </div>
-              <p
-                className="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-1"
-              >
+              <p className="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-1">
                 {project.description}
               </p>
               <div className="flex flex-wrap gap-2 mt-auto">

@@ -159,23 +159,33 @@
     },
     {
       "id": 2,
-      "title": "Associate Cloud Engineer",
-      "issuer": "Google Cloud",
-      "date": "Issued 2022",
-      "icon": "verified",
-      "iconBgColor": "bg-orange-50 dark:bg-orange-900/30",
-      "iconColor": "text-orange-600",
-      "link": "#"
-    },
-    {
-      "id": 3,
       "title": "Professional Cloud Architect",
       "issuer": "Google Cloud",
       "date": "September 2025",
       "icon": "verified",
       "iconBgColor": "bg-emerald-50 dark:bg-emerald-900/30",
       "iconColor": "text-emerald-600",
-      "link": "#"
+      "link": "https://www.credly.com/badges/49430d52-a718-4b57-941d-40855a368c14/public_url"
+    },
+    {
+      "id": 3,
+      "title": "Associate Cloud Engineer",
+      "issuer": "Google Cloud",
+      "date": "Issued 2022",
+      "icon": "verified",
+      "iconBgColor": "bg-orange-50 dark:bg-orange-900/30",
+      "iconColor": "text-orange-600",
+      "link": "https://www.credly.com/badges/5b66f887-fc90-4b7d-b0c9-0da1e91755d3/public_url"
+    },
+    {
+      "id": 4,
+      "title": "Generative AI Leader",
+      "issuer": "Google Cloud",
+      "date": "Issued 2025",
+      "icon": "verified",
+      "iconBgColor": "bg-purple-50 dark:bg-purple-900/30",
+      "iconColor": "text-purple-600",
+      "link": "https://www.credly.com/badges/4f594aa6-40b2-47b2-b5cc-460d4456f6cd/public_url"
     }
   ],
 

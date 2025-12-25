@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Certifications = ({ data }) => {
   return (
@@ -24,9 +24,7 @@ const Certifications = ({ data }) => {
                 <span className="material-symbols-outlined">{cert.icon}</span>
               </div>
               <div>
-                <h4
-                  className="text-base font-bold text-[#111318] dark:text-white"
-                >
+                <h4 className="text-base font-bold text-[#111318] dark:text-white">
                   {cert.title}
                 </h4>
                 <p className="text-sm text-gray-600 dark:text-gray-400">
@@ -45,9 +43,7 @@ const Certifications = ({ data }) => {
                 <span className="material-symbols-outlined">{cert.icon}</span>
               </div>
               <div>
-                <h4
-                  className="text-base font-bold text-[#111318] dark:text-white"
-                >
+                <h4 className="text-base font-bold text-[#111318] dark:text-white">
                   {cert.title}
                 </h4>
                 <p className="text-sm text-gray-600 dark:text-gray-400">
@@ -55,8 +51,8 @@ const Certifications = ({ data }) => {
                 </p>
               </div>
             </div>
-          )}
-        ))}
+          )
+        )}
       </div>
     </section>
   );
