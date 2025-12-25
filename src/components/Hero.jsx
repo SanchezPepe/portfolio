@@ -1,6 +1,5 @@
-import React from "react";
-import heroImage from "../assets/portrait.jpeg";
-import Icon from './Icon';
+import heroImage from "../assets/portrait2.jpg";
+import Icon from "./Icon";
 
 const Hero = ({ data }) => {
   return (
@@ -19,6 +18,9 @@ const Hero = ({ data }) => {
               <p className="text-lg text-gray-600 dark:text-gray-400 sm:text-xl leading-relaxed max-w-xl">
                 {data.personal.description}
               </p>
+              <div className="bg-gray-100 dark:bg-gray-700 text-[#111318] dark:text-white rounded-lg px-3 py-1 text-sm shadow-sm inline-block mt-2">
+                Mexico City 🇲🇽
+              </div>
             </div>
             <div className="flex flex-wrap gap-4 pt-2">
               {data.hero.buttons.map((button, index) => (

@@ -1,7 +1,7 @@
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Skills from './components/Skills';
-import Contact from './components/Contact';
+
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Certifications from './components/Certifications';
@@ -24,7 +24,7 @@ function App() {
             <aside className="lg:col-span-4 lg:block space-y-8">
               <div className="lg:sticky lg:top-24 space-y-8">
                 <Skills data={contentData} />
-                <Contact data={contentData} />
+      
               </div>
             </aside>
             {/* Right Column: Experience & Projects */}

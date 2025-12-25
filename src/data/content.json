@@ -27,22 +27,19 @@
       "label": "Skills",
       "href": "#skills"
     },
-    {
-      "label": "Contact",
-      "href": "#contact"
-    }
+
   ],
   "hero": {
     "buttons": [
       {
-        "text": "View GitHub",
-        "href": "https://github.com/josesa-dev",
+        "text": "GitHub",
+        "href": "https://github.com/sanchezpepe",
         "icon": "github",
         "type": "secondary"
       },
       {
         "text": "LinkedIn",
-        "href": "https://www.linkedin.com/in/sanchezjoses",
+        "href": "https://www.linkedin.com/in/sanchezjose8",
         "icon": "linkedin",
         "type": "secondary"
       }
@@ -102,7 +99,7 @@
     },
     {
       "id": 1,
-      "title": "Technical Solutions Engineer - AI/ML (Previous Role)",
+      "title": "Technical Solutions Engineer - AI/ML",
       "company": "Google",
       "period": "June 2021 - May 2025",
       "location": "Mexico City",
@@ -170,36 +167,7 @@
       "iconColor": "text-orange-600"
     }
   ],
-  "contact": {
-    "title": "Contact",
-    "icon": "contact_mail",
-    "items": [
-      {
-        "id": 1,
-        "icon": "linkedin",
-        "text": "LinkedIn",
-        "href": "https://www.linkedin.com/in/sanchezjoses"
-      },
-      {
-        "id": 2,
-        "icon": "github",
-        "text": "GitHub",
-        "href": "https://github.com/josesa-dev"
-      },
-      {
-        "id": 3,
-        "icon": "public",
-        "text": "josesa.dev",
-        "href": "https://josesa.dev"
-      },
-      {
-        "id": 4,
-        "icon": "location_on",
-        "text": "Mexico City",
-        "href": "#"
-      }
-    ]
-  },
+
   "footer": {
     "copyright": " José Sánchez",
     "social": [
