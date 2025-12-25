@@ -9,8 +9,8 @@ const Certifications = ({ data }) => {
         </h2>
       </div>
       <div className="space-y-4">
-        {data.certifications.map((cert) => (
-          {cert.link ? (
+        {data.certifications.map((cert) =>
+          cert.link ? (
             <a
               href={cert.link}
               target="_blank"
