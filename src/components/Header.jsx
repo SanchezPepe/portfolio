@@ -34,12 +34,7 @@ const Header = ({ isDark, toggleDarkMode, data }) => {
         </nav>
         <div className="flex items-center gap-4">
           <DarkModeToggle isDark={isDark} onToggle={toggleDarkMode} />
-          <button
-            className="flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm font-bold text-white transition-transform hover:scale-105 active:scale-95 shadow-lg shadow-primary/30"
-          >
-            <span className="material-symbols-outlined text-[20px]">download</span>
-            <span className="hidden sm:inline">Download CV</span>
-          </button>
+
         </div>
       </div>
     </header>
