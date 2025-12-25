@@ -26,7 +26,7 @@ const Skills = ({ data }) => {
               {category.skills.map((skill, skillIndex) => (
                 <span
                   key={skillIndex}
-                  className="inline-flex items-center rounded-md bg-[#f0f2f4] dark:bg-gray-800 px-2.5 py-1 text-sm font-medium text-[#111318] dark:text-gray-200"
+                  className="inline-flex items-center rounded-md bg-[#f0f2f4] dark:bg-gray-800 border border-transparent dark:border-white px-2.5 py-1 text-sm font-medium text-[#111318] dark:text-gray-200"
                 >
                   {skill}
                 </span>
