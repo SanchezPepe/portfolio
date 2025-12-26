@@ -47,3 +47,16 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Subtle dot pattern background */
+body {
+  background-color: var(--color-background-light);
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.08) 2px, transparent 2px);
+  background-size: 32px 32px;
+}
+
+.dark body {
+  background-color: var(--color-background-dark);
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.06) 2px, transparent 2px);
+  background-size: 32px 32px;
+}

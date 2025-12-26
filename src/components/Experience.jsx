@@ -4,9 +4,9 @@ const Experience = ({ data }) => {
   // Calculate years of experience from earliest position
   const calculateYearsOfExperience = () => {
     const months = {
-      'January': 0, 'February': 1, 'March': 2, 'April': 3,
-      'May': 4, 'June': 5, 'July': 6, 'August': 7,
-      'September': 8, 'October': 9, 'November': 10, 'December': 11
+      'Jan': 0, 'Feb': 1, 'Mar': 2, 'Apr': 3,
+      'May': 4, 'Jun': 5, 'Jul': 6, 'Aug': 7,
+      'Sep': 8, 'Oct': 9, 'Nov': 10, 'Dec': 11
     };
 
     let earliestDate = new Date();
@@ -41,16 +41,16 @@ const Experience = ({ data }) => {
           {yearsOfExperience}+ Years
         </span>
       </div>
-      <div className="relative border-l-2 border-gray-100 dark:border-gray-800 ml-3 space-y-10">
+      <div className="relative border-l-2 border-gray-100 dark:border-gray-800 ml-3 space-y-10 group/list">
         {data.experience.map((exp, index) => (
-          <div key={exp.id} className="relative pl-8 group">
-            <div className={`absolute -left-[9px] top-1.5 h-4 w-4 rounded-full border-4 border-white dark:border-[#161b22] ${
+          <div key={exp.id} className="relative pl-8 group/item transition-all duration-300 ease-out group-hover/list:opacity-50 hover:!opacity-100 hover:translate-x-1">
+            <div className={`absolute -left-[9px] top-1.5 h-4 w-4 rounded-full border-4 border-white dark:border-[#161b22] transition-colors ${
               exp.current
                 ? "bg-primary shadow-sm"
-                : "bg-gray-300 dark:bg-gray-600 group-hover:bg-primary transition-colors"
+                : "bg-gray-300 dark:bg-gray-600 group-hover/item:bg-primary"
             }`}></div>
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-1">
-              <h4 className="font-bold text-lg text-gray-900 dark:text-white group-hover:text-primary transition-colors">
+              <h4 className="font-bold text-lg text-gray-900 dark:text-white group-hover/item:text-primary transition-colors">
                 {exp.title}
               </h4>
               <span className="text-xs font-semibold text-gray-500 dark:text-gray-400 bg-gray-50 dark:bg-gray-800 px-2 py-1 rounded">
