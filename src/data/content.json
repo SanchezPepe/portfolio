@@ -241,6 +241,27 @@
     }
   ],
 
+  "funStats": [
+    {
+      "id": 1,
+      "label": "Cups of Coffee",
+      "value": "∞",
+      "emoji": "☕"
+    },
+    {
+      "id": 2,
+      "label": "Avocados Weekly",
+      "value": "3",
+      "emoji": "🥑"
+    },
+    {
+      "id": 3,
+      "label": "Plants Alive",
+      "value": "9",
+      "emoji": "🌱"
+    }
+  ],
+
   "interests": [
     {
       "id": 1,
