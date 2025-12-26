@@ -5,12 +5,15 @@
   },
   "personal": {
     "name": "José Sánchez",
+    "nickname": "Pepe",
+    "phonetic": "PEH-peh",
     "initials": "JS",
     "title": "Cloud Customer Engineer - SMB",
     "role": "Cloud Customer Engineer - SMB",
-    "tagline": "Empowering businesses with",
-    "taglineHighlight": "Google Cloud solutions",
-    "description": " Cloud Customer Engineer for the SMB segment, specializing in Google Cloud solutions. I help small and medium-sized businesses leverage cloud technology to achieve their goals, providing technical guidance, architectural design, and strategic planning.",
+    "intro": "I'm José (Pepe) Sánchez",
+    "tagline": "Helping businesses figure out",
+    "taglineHighlight": "Google Cloud",
+    "description": "I work with small and medium-sized businesses to help them get the most out of Google Cloud. That means answering questions, designing architectures, and occasionally debugging things that shouldn't be broken.",
     "image": "../assets/portrait2.jpg",
     "imageAlt": "José Sánchez Aguilar portrait"
   },
@@ -79,7 +82,7 @@
       "company": "Google",
       "period": "June 2025 - Present",
       "location": "Mexico City",
-      "description": "Empowering SMBs with Google Cloud solutions, providing expert technical guidance, architectural design, and strategic planning for effective cloud adoption and business objective achievement.",
+      "description": "I help small businesses adopt Google Cloud — answering technical questions, designing solutions, and making sure things actually work the way they're supposed to.",
       "current": true
     },
     {
@@ -88,7 +91,7 @@
       "company": "Google",
       "period": "June 2021 - May 2025",
       "location": "Mexico City",
-      "description": "Provided advanced support to Google Cloud Premium Customers, specializing in GCP AI/ML solutions. Collaborated on internal playbooks, acted as a subject matter expert, and resolved complex technical challenges.",
+      "description": "Helped Google Cloud customers fix things when they broke, mostly around AI/ML. Wrote internal docs, debugged weird edge cases, and became the person people asked about ML stuff.",
       "current": false
     },
     {
@@ -97,7 +100,7 @@
       "company": "Solera",
       "period": "November 2020 - June 2021",
       "location": "Mexico City",
-      "description": "Developed and designed new C# and Java applications, maintained existing software, and enhanced internal documentation for improved quality and reliability.",
+      "description": "Built and maintained C# and Java apps. Fixed bugs, wrote docs, and tried to leave the codebase better than I found it.",
       "current": false
     },
     {
@@ -106,7 +109,7 @@
       "company": "BairesDev",
       "period": "October 2019 - November 2020",
       "location": "Mexico City",
-      "description": "Improved test case documentation, defined test cases for system requirements, and analyzed end-user needs to identify bugs and propose improvements.",
+      "description": "Wrote test cases, found bugs, and occasionally told developers things they didn't want to hear. Also made the documentation less confusing.",
       "current": false
     }
   ],
