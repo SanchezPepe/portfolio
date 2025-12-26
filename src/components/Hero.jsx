@@ -9,20 +9,21 @@ const Hero = ({ data }) => {
         <div className="space-y-4">
           {/* Name */}
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-normal tracking-tight text-gray-900 dark:text-white">
-            José <span className="text-primary">(Pepe</span><span className="text-lg text-gray-400 dark:text-gray-500 ml-1" style={{ fontFamily: 'Georgia, "Times New Roman", serif', fontStyle: 'italic' }}>{data.personal.phonetic}</span><span className="text-primary">)</span> Sánchez
+            José Sánchez <span className="text-primary">(Pepe)</span> <span className="text-lg text-gray-400 dark:text-gray-500" style={{ fontFamily: 'Georgia, "Times New Roman", serif', fontStyle: 'italic' }}>[{data.personal.phonetic}]</span>
           </h2>
 
           {/* One-liner */}
-          <p className="text-xl sm:text-2xl text-gray-600 dark:text-gray-400 max-w-2xl">
-            Computer Engineer & Customer Engineer at Google Cloud. I help businesses figure out the cloud. The coffee helps me figure out everything else.
-          </p>
+          <div className="text-xl sm:text-2xl text-gray-600 dark:text-gray-400 max-w-2xl space-y-1">
+            <p>Computer Engineer & Customer Engineer at Google Cloud.</p>
+            <p>I help businesses figure out the cloud. The coffee helps me figure out everything else.</p>
+          </div>
 
           {/* Buttons */}
           <div className="flex flex-wrap gap-3 pt-2">
             {data.hero.buttons.map((button, index) => (
               <a
                 key={index}
-                className="inline-flex items-center justify-center gap-2 rounded-xl bg-gray-100 dark:bg-gray-800 px-6 py-3 text-sm font-bold text-gray-900 dark:text-white transition-all hover:bg-gray-200 dark:hover:bg-gray-700"
+                className="inline-flex items-center justify-center gap-2 rounded-xl bg-gray-100 dark:bg-gray-800 px-6 py-3 text-sm font-bold text-gray-900 dark:text-white transition-all hover:bg-primary hover:text-white"
                 href={data.social_links[button.socialKey]}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -47,8 +48,8 @@ const Hero = ({ data }) => {
             Why a penguin? No deep reason. Who doesn't like emperor penguins?
           </p>
           <div className="text-center">
-            <a href="https://www.youtube.com/watch?v=q3uXXh1sHcI" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-primary text-white text-xs font-medium hover:bg-blue-700 transition-colors">
-              Evidence
+            <a href="https://www.youtube.com/watch?v=q3uXXh1sHcI" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary text-white text-xs font-medium hover:bg-blue-700 transition-colors">
+              <span>▶</span> Evidence 🐧
             </a>
           </div>
         </div>

@@ -7,30 +7,8 @@
     "name": "José Sánchez",
     "nickname": "Pepe",
     "phonetic": "PEH-peh",
-    "initials": "JS",
-    "title": "Cloud Customer Engineer - SMB",
-    "role": "Cloud Customer Engineer - SMB",
-    "intro": "I'm José (Pepe) Sánchez",
-    "tagline": "Helping businesses figure out",
-    "taglineHighlight": "Google Cloud",
-    "description": "I work with small and medium-sized businesses to help them get the most out of Google Cloud. That means answering questions, designing architectures, and occasionally debugging things that shouldn't be broken.",
-    "image": "../assets/portrait2.jpg",
     "imageAlt": "José Sánchez Aguilar portrait"
   },
-  "navigation": [
-    {
-      "label": "Experience",
-      "href": "#experience"
-    },
-    {
-      "label": "Projects",
-      "href": "#projects"
-    },
-    {
-      "label": "Skills",
-      "href": "#skills"
-    }
-  ],
   "hero": {
     "buttons": [
       {
@@ -294,7 +272,7 @@
   ],
 
   "footer": {
-    "copyright": " José Sánchez",
+    "copyright": "José Sánchez",
     "social": [
       {
         "name": "GitHub",
