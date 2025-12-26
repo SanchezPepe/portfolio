@@ -1,10 +1,12 @@
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Skills from './components/Skills';
-
 import Experience from './components/Experience';
-import Projects from './components/Projects';
-import Certifications from './components/Certifications';
+import ProjectsCarousel from './components/ProjectsCarousel';
+import CertificationsCarousel from './components/CertificationsCarousel';
+import Languages from './components/Languages';
+import Education from './components/Education';
+import Interests from './components/Interests';
 import Footer from './components/Footer';
 import { useDarkMode } from './hooks/useDarkMode';
 import contentData from './data/content.json';
@@ -14,30 +16,42 @@ function App() {
   const { isDark, toggleDarkMode } = useDarkMode();
 
   return (
-    <div className="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark font-display text-[#111318] dark:text-white overflow-x-hidden">
+    <>
       <Header isDark={isDark} toggleDarkMode={toggleDarkMode} data={contentData} />
-      <main className="flex-1">
-        <Hero data={contentData} />
-        <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-            {/* Left Column: Skills & Summary (Sticky on Desktop) */}
-            <aside className="lg:col-span-4 lg:block space-y-8">
-              <div className="lg:sticky lg:top-24 space-y-8">
-                <Skills data={contentData} />
-      
-              </div>
-            </aside>
-            {/* Right Column: Experience & Projects */}
-            <div className="lg:col-span-8 space-y-12">
-              <Experience data={contentData} />
-              <Projects data={contentData} />
-              <Certifications data={contentData} />
-            </div>
+      <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
+        {/* Hero Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4 mb-3 lg:mb-4">
+          <Hero data={contentData} />
+        </div>
+
+        {/* Main Content: Experience (left) + Right column stack */}
+        <div className="flex flex-col lg:flex-row gap-3 lg:gap-4 mb-3 lg:mb-4">
+          <div className="w-full lg:w-1/2">
+            <Experience data={contentData} />
+          </div>
+          <div className="w-full lg:w-1/2 flex flex-col gap-3 lg:gap-4">
+            <Education data={contentData} />
+            <CertificationsCarousel data={contentData} />
+            <Skills data={contentData} />
           </div>
         </div>
+
+        {/* Bottom Row: Projects (50%) + Languages (25%) + Interests (25%) */}
+        <div className="flex flex-col lg:flex-row gap-3 lg:gap-4">
+          <div className="w-full lg:w-1/2">
+            <ProjectsCarousel data={contentData} />
+          </div>
+          <div className="w-full lg:w-1/4">
+            <Languages data={contentData} />
+          </div>
+          <div className="w-full lg:w-1/4">
+            <Interests data={contentData} />
+          </div>
+        </div>
+
+        <Footer data={contentData} />
       </main>
-      <Footer data={contentData} />
-    </div>
+    </>
   )
 }
 

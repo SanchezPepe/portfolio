@@ -2,31 +2,24 @@ import React from 'react';
 
 const Skills = ({ data }) => {
   return (
-    <div
-      className="rounded-2xl bg-white dark:bg-[#1e2736] p-6 shadow-sm ring-1 ring-gray-100 dark:ring-gray-800"
-      id="skills"
-    >
-      <h3
-        className="flex items-center gap-2 text-xl font-bold text-[#111318] dark:text-white mb-6"
-      >
-        <span className="material-symbols-outlined text-primary">
-          {data.skills.icon}
-        </span>
-        {data.skills.title}
-      </h3>
-      <div className="space-y-6">
+    <div className="rounded-3xl bg-card-light dark:bg-card-dark p-6 sm:p-8 shadow-sm border border-gray-100 dark:border-gray-800 h-full">
+      <div className="flex items-center gap-2 mb-6">
+        <div className="p-2 rounded-lg bg-orange-100 dark:bg-orange-900/20 text-orange-600">
+          <span className="material-symbols-outlined">{data.skills.icon}</span>
+        </div>
+        <h3 className="text-xl font-bold">Tech Arsenal</h3>
+      </div>
+      <div className="grid grid-cols-1 gap-4">
         {data.skills.categories.map((category, index) => (
           <div key={index}>
-            <h4
-              className="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-3"
-            >
+            <h4 className="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3">
               {category.name}
             </h4>
             <div className="flex flex-wrap gap-2">
               {category.skills.map((skill, skillIndex) => (
                 <span
                   key={skillIndex}
-                  className="inline-flex items-center rounded-md bg-[#f0f2f4] dark:bg-gray-800 border border-transparent dark:border-white px-2.5 py-1 text-sm font-medium text-[#111318] dark:text-gray-200"
+                  className="px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-gray-800 text-sm font-medium hover:bg-primary hover:text-white transition-colors cursor-default"
                 >
                   {skill}
                 </span>

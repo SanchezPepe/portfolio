@@ -4,18 +4,22 @@
 
 @theme {
   --color-primary: #135bec;
-  --color-background-light: #f6f6f8;
-  --color-background-dark: #101622;
+  --color-background-light: #f0f2f5;
+  --color-background-dark: #0d1117;
+  --color-card-light: #ffffff;
+  --color-card-dark: #161b22;
 
   --font-family-display: Inter, sans-serif;
 
   --radius: 0.25rem;
   --radius-lg: 0.5rem;
   --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.5rem;
   --radius-full: 9999px;
 }
 
-/* Custom styles from index.html.bak */
+/* Print styles */
 @media print {
   .no-print {
     display: none !important;
@@ -29,6 +33,16 @@
     color: black !important;
   }
 }
+
+/* Scrollbar hide utilities */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;

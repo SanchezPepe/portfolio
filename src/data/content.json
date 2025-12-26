@@ -1,7 +1,7 @@
 {
   "social_links": {
-    "github": "https://github.com/josesa-dev",
-    "linkedin": "https://www.linkedin.com/in/sanchezjoses"
+    "github": "https://github.com/sanchezpepe8",
+    "linkedin": "https://www.linkedin.com/in/sanchezjose8"
   },
   "personal": {
     "name": "José Sánchez",
@@ -32,13 +32,13 @@
     "buttons": [
       {
         "text": "GitHub",
-        "href": "https://github.com/sanchezpepe",
+        "socialKey": "github",
         "icon": "github",
         "type": "secondary"
       },
       {
         "text": "LinkedIn",
-        "href": "https://www.linkedin.com/in/sanchezjose8",
+        "socialKey": "linkedin",
         "icon": "linkedin",
         "type": "secondary"
       }
@@ -50,19 +50,11 @@
     "categories": [
       {
         "name": "Web Application Development",
-        "skills": [
-          "HTML",
-          "CSS",
-          "JavaScript",
-          "Vue.js",
-          "Bootstrap",
-          "Bulma",
-          "Tailwind CSS"
-        ]
+        "skills": ["React.js", "Node.js", "Vue.js"]
       },
       {
         "name": "Programming Languages",
-        "skills": ["Java", "C#", "SQL", "Python", "Kotlin"]
+        "skills": ["Java", "JavaScript", "C#", "SQL", "Python", "TypeScript"]
       },
       {
         "name": "Cloud & AI/ML",
@@ -76,20 +68,14 @@
       },
       {
         "name": "Other",
-        "skills": [
-          "Linux",
-          "Git",
-          "Visual Studio",
-          "Mobile Application Development (Android)",
-          "Stripe API"
-        ]
+        "skills": ["Linux", "Git", "Stripe API"]
       }
     ]
   },
   "experience": [
     {
       "id": 0,
-      "title": "Cloud Customer Engineer - SMB Segment",
+      "title": "Cloud Customer Engineer",
       "company": "Google",
       "period": "June 2025 - Present",
       "location": "Mexico City",
@@ -98,7 +84,7 @@
     },
     {
       "id": 1,
-      "title": "Technical Solutions Engineer - AI/ML",
+      "title": "Technical Solutions Engineer",
       "company": "Google",
       "period": "June 2021 - May 2025",
       "location": "Mexico City",
@@ -144,21 +130,77 @@
       "technologies": ["Vue.js", "Vuetify", "Firebase", "GitHub Actions"],
       "liveUrl": "https://appitam.firebaseapp.com",
       "githubUrl": "#"
+    },
+    {
+      "id": 3,
+      "title": "AI Chatbot Platform",
+      "description": "An intelligent chatbot solution powered by Dialogflow and Vertex AI for customer support automation.",
+      "image": "https://picsum.photos/seed/chatbot/600/400",
+      "imageAlt": "AI Chatbot Platform",
+      "technologies": ["Python", "Dialogflow", "Vertex AI", "GCP"],
+      "liveUrl": "#",
+      "githubUrl": "#"
+    },
+    {
+      "id": 4,
+      "title": "Cloud Dashboard",
+      "description": "A real-time monitoring dashboard for cloud infrastructure with alerts and analytics.",
+      "image": "https://picsum.photos/seed/dashboard/600/400",
+      "imageAlt": "Cloud Dashboard",
+      "technologies": ["React", "Node.js", "BigQuery", "Cloud Run"],
+      "liveUrl": "#",
+      "githubUrl": "#"
+    },
+    {
+      "id": 5,
+      "title": "E-commerce API",
+      "description": "A scalable RESTful API for e-commerce applications with payment processing and inventory management.",
+      "image": "https://picsum.photos/seed/ecommerce/600/400",
+      "imageAlt": "E-commerce API",
+      "technologies": ["Java", "Spring Boot", "PostgreSQL", "Stripe"],
+      "liveUrl": "#",
+      "githubUrl": "#"
+    },
+    {
+      "id": 6,
+      "title": "Mobile Fitness App",
+      "description": "A cross-platform fitness tracking app with workout plans, progress tracking, and social features.",
+      "image": "https://picsum.photos/seed/fitness/600/400",
+      "imageAlt": "Mobile Fitness App",
+      "technologies": ["Kotlin", "Firebase", "Android", "ML Kit"],
+      "liveUrl": "#",
+      "githubUrl": "#"
     }
   ],
-  "certifications": [
+  "languages": [
     {
       "id": 1,
-      "title": "Bachelor of Science in Computer Engineering",
-      "issuer": "Instituto Tecnológico Autónomo de México",
-      "date": "2021",
-      "icon": "school",
-      "iconBgColor": "bg-blue-50 dark:bg-blue-900/30",
-      "iconColor": "text-primary",
-      "link": "#"
+      "name": "Spanish",
+      "proficiency": "Native",
+      "level": 100
     },
     {
       "id": 2,
+      "name": "English",
+      "proficiency": "Professional",
+      "level": 90
+    },
+    {
+      "id": 3,
+      "name": "Portuguese",
+      "proficiency": "Intermediate",
+      "level": 60
+    }
+  ],
+  "education": {
+    "degree": "Bachelor of Science in Computer Engineering",
+    "institution": "Instituto Tecnológico Autónomo de México",
+    "year": "2020",
+    "icon": "memory"
+  },
+  "certifications": [
+    {
+      "id": 1,
       "title": "Professional Cloud Architect",
       "issuer": "Google Cloud",
       "date": "September 2025",
@@ -168,7 +210,7 @@
       "link": "https://www.credly.com/badges/49430d52-a718-4b57-941d-40855a368c14/public_url"
     },
     {
-      "id": 3,
+      "id": 2,
       "title": "Associate Cloud Engineer",
       "issuer": "Google Cloud",
       "date": "Issued 2022",
@@ -178,7 +220,7 @@
       "link": "https://www.credly.com/badges/5b66f887-fc90-4b7d-b0c9-0da1e91755d3/public_url"
     },
     {
-      "id": 4,
+      "id": 3,
       "title": "Generative AI Leader",
       "issuer": "Google Cloud",
       "date": "Issued 2025",
@@ -186,6 +228,44 @@
       "iconBgColor": "bg-purple-50 dark:bg-purple-900/30",
       "iconColor": "text-purple-600",
       "link": "https://www.credly.com/badges/4f594aa6-40b2-47b2-b5cc-460d4456f6cd/public_url"
+    },
+    {
+      "id": 4,
+      "title": "Cloud Digital Leader",
+      "issuer": "Google Cloud",
+      "date": "Issued 2022",
+      "icon": "verified",
+      "iconBgColor": "bg-sky-50 dark:bg-sky-900/30",
+      "iconColor": "text-sky-600",
+      "link": "https://www.credly.com/badges/c8411ef2-1e86-48d6-bd5a-8e95f28625ef/public_url"
+    }
+  ],
+
+  "interests": [
+    {
+      "id": 1,
+      "name": "Geography",
+      "emoji": "🌍"
+    },
+    {
+      "id": 2,
+      "name": "Running",
+      "emoji": "🏃"
+    },
+    {
+      "id": 3,
+      "name": "Soccer",
+      "emoji": "⚽"
+    },
+    {
+      "id": 4,
+      "name": "Traveling",
+      "emoji": "✈️"
+    },
+    {
+      "id": 5,
+      "name": "Hiking",
+      "emoji": "🥾"
     }
   ],
 
@@ -194,12 +274,12 @@
     "social": [
       {
         "name": "GitHub",
-        "href": "https://github.com/josesa-dev",
+        "socialKey": "github",
         "icon": "github"
       },
       {
         "name": "LinkedIn",
-        "href": "https://www.linkedin.com/in/sanchezjoses",
+        "socialKey": "linkedin",
         "icon": "linkedin"
       }
     ]
