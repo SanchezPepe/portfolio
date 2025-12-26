@@ -33,14 +33,14 @@ function App() {
           <div className="w-full lg:w-1/2 flex flex-col gap-3 lg:gap-4">
             <Education data={contentData} />
             <CertificationsCarousel data={contentData} />
-            <Skills data={contentData} />
+            <ProjectsCarousel data={contentData} />
           </div>
         </div>
 
-        {/* Bottom Row: Projects (50%) + Languages/Stats (25%) + Interests (25%) */}
+        {/* Bottom Row: Skills (50%) + Languages/Stats (25%) + Interests (25%) */}
         <div className="flex flex-col lg:flex-row gap-3 lg:gap-4">
           <div className="w-full lg:w-1/2">
-            <ProjectsCarousel data={contentData} />
+            <Skills data={contentData} />
           </div>
           <div className="w-full lg:w-1/4 flex flex-col gap-3 lg:gap-4">
             <Languages data={contentData} />
