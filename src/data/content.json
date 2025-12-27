@@ -94,6 +94,16 @@
   "projects": [
     {
       "id": 1,
+      "title": "Portuguese Cheat Sheet",
+      "description": "A quick reference guide for Portuguese language learners with essential grammar, vocabulary, and phrases.",
+      "image": "https://picsum.photos/seed/portuguese/600/400",
+      "imageAlt": "Portuguese Cheat Sheet project",
+      "technologies": ["React", "Firebase", "Tailwind CSS", "GitHub Actions"],
+      "liveUrl": "https://pt.josesa.dev",
+      "githubUrl": "#"
+    },
+    {
+      "id": 2,
       "title": "Cinema Gear Hub",
       "description": "A user-friendly cinema gear rental platform built with Vue.js and Tailwind CSS, featuring Stripe integration and Firebase backend.",
       "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDKC3AJBVpq783Jr9ZySJ4dHHVqTnVqG_bsIXGwn0Ja7CTb74uvxG61o2lWSOg56wP5-sUZthU0Ddu_5D2JXzki3rQsOn6CdoaceBcLH8YqeaPILP5J0r_9cOA06s121hC4NSa_qgf0VpFWyFqSOAvn2o2n_i0mLwcYI6i6-GzBmoVLtO5bvvAayWUPoEXTkyavLEt_ZLcHD9bvN-23DuN70OsM2XFd31iX0aV0eRXrbina2Pnkmu6xyRZzBso_64lJJAM9McvSh18",
@@ -103,7 +113,7 @@
       "githubUrl": "#"
     },
     {
-      "id": 2,
+      "id": 3,
       "title": "Web Application for students",
       "description": "A web app developed for students to plan schedules and track shuttle in real-time using Vue.js, Vuetify, and Firebase.",
       "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDdxztROUXPYxwqFvfcfaafZCROHcq2zkeDIAWZ6yLwcZaKEqApw1bKXf-6m1F_RAFi90to0Qx2KdqoAS5HIP7rAtlNVIO9EypYy4oaayRMBDjYEYrJdfDJOlAQSCdpjfTRmrhc7RKQoutKsNOKUFJ8KaFDTQ1wEu9PKRhEnJz8OFqsGF_NS_pmsjMo9OCOFztAEyye2lGziDTV0ND_t-wSIoe4KHG--SEEX6Qbc4fBA1EgPSZtflHr08t6ORSyQT_vIcL-1eGbUuc",
@@ -113,7 +123,7 @@
       "githubUrl": "#"
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "AI Chatbot Platform",
       "description": "An intelligent chatbot solution powered by Dialogflow and Vertex AI for customer support automation.",
       "image": "https://picsum.photos/seed/chatbot/600/400",
@@ -123,7 +133,7 @@
       "githubUrl": "#"
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "Cloud Dashboard",
       "description": "A real-time monitoring dashboard for cloud infrastructure with alerts and analytics.",
       "image": "https://picsum.photos/seed/dashboard/600/400",
@@ -133,7 +143,7 @@
       "githubUrl": "#"
     },
     {
-      "id": 5,
+      "id": 6,
       "title": "E-commerce API",
       "description": "A scalable RESTful API for e-commerce applications with payment processing and inventory management.",
       "image": "https://picsum.photos/seed/ecommerce/600/400",
@@ -143,7 +153,7 @@
       "githubUrl": "#"
     },
     {
-      "id": 6,
+      "id": 7,
       "title": "Mobile Fitness App",
       "description": "A cross-platform fitness tracking app with workout plans, progress tracking, and social features.",
       "image": "https://picsum.photos/seed/fitness/600/400",
