@@ -161,6 +161,16 @@
       "technologies": ["Kotlin", "Firebase", "Android", "ML Kit"],
       "liveUrl": "#",
       "githubUrl": "#"
+    },
+    {
+      "id": 8,
+      "title": "TerraVista",
+      "description": "Interactive geospatial data visualization platform for Mexico with choropleth maps, heatmaps, and 3D visualizations.",
+      "image": "https://picsum.photos/seed/terravista/600/400",
+      "imageAlt": "TerraVista geospatial visualization platform",
+      "technologies": ["React", "MapLibre GL", "deck.gl", "Tailwind CSS"],
+      "liveUrl": "https://carto.josesa.dev",
+      "githubUrl": "https://github.com/SanchezPepe/carto"
     }
   ],
   "languages": [
