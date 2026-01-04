@@ -124,46 +124,6 @@
     },
     {
       "id": 4,
-      "title": "AI Chatbot Platform",
-      "description": "An intelligent chatbot solution powered by Dialogflow and Vertex AI for customer support automation.",
-      "image": "https://picsum.photos/seed/chatbot/600/400",
-      "imageAlt": "AI Chatbot Platform",
-      "technologies": ["Python", "Dialogflow", "Vertex AI", "GCP"],
-      "liveUrl": "#",
-      "githubUrl": "#"
-    },
-    {
-      "id": 5,
-      "title": "Cloud Dashboard",
-      "description": "A real-time monitoring dashboard for cloud infrastructure with alerts and analytics.",
-      "image": "https://picsum.photos/seed/dashboard/600/400",
-      "imageAlt": "Cloud Dashboard",
-      "technologies": ["React", "Node.js", "BigQuery", "Cloud Run"],
-      "liveUrl": "#",
-      "githubUrl": "#"
-    },
-    {
-      "id": 6,
-      "title": "E-commerce API",
-      "description": "A scalable RESTful API for e-commerce applications with payment processing and inventory management.",
-      "image": "https://picsum.photos/seed/ecommerce/600/400",
-      "imageAlt": "E-commerce API",
-      "technologies": ["Java", "Spring Boot", "PostgreSQL", "Stripe"],
-      "liveUrl": "#",
-      "githubUrl": "#"
-    },
-    {
-      "id": 7,
-      "title": "Mobile Fitness App",
-      "description": "A cross-platform fitness tracking app with workout plans, progress tracking, and social features.",
-      "image": "https://picsum.photos/seed/fitness/600/400",
-      "imageAlt": "Mobile Fitness App",
-      "technologies": ["Kotlin", "Firebase", "Android", "ML Kit"],
-      "liveUrl": "#",
-      "githubUrl": "#"
-    },
-    {
-      "id": 8,
       "title": "TerraVista",
       "description": "Interactive geospatial data visualization platform for Mexico with choropleth maps, heatmaps, and 3D visualizations.",
       "image": "https://picsum.photos/seed/terravista/600/400",
