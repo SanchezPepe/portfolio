@@ -119,7 +119,7 @@
       "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDdxztROUXPYxwqFvfcfaafZCROHcq2zkeDIAWZ6yLwcZaKEqApw1bKXf-6m1F_RAFi90to0Qx2KdqoAS5HIP7rAtlNVIO9EypYy4oaayRMBDjYEYrJdfDJOlAQSCdpjfTRmrhc7RKQoutKsNOKUFJ8KaFDTQ1wEu9PKRhEnJz8OFqsGF_NS_pmsjMo9OCOFztAEyye2lGziDTV0ND_t-wSIoe4KHG--SEEX6Qbc4fBA1EgPSZtflHr08t6ORSyQT_vIcL-1eGbUuc",
       "imageAlt": "Image of student web application project",
       "technologies": ["Vue.js", "Vuetify", "Firebase", "GitHub Actions"],
-      "liveUrl": "https://appitam.firebaseapp.com",
+      "liveUrl": "https://appitam.org",
       "githubUrl": "#"
     },
     {
