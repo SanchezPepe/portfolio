@@ -258,7 +258,8 @@
       "description": "Modern React portfolio with a bento-style grid layout, dark mode, and interactive components.",
       "date": "Dec 2025",
       "tech": "React + Tailwind CSS",
-      "commit": "main"
+      "commit": "main",
+      "previewUrl": null
     },
     {
       "id": 2,
@@ -266,7 +267,8 @@
       "description": "Stripped down to essentials. Dark background, serif font, just the basics.",
       "date": "Jan 2023",
       "tech": "Vue.js",
-      "commit": "4b62569"
+      "commit": "4b62569",
+      "previewUrl": "/history/v3/"
     },
     {
       "id": 3,
@@ -274,7 +276,17 @@
       "description": "Split layout with personal info on one side and projects on the other.",
       "date": "Aug 2022",
       "tech": "Vue.js + Tailwind CSS",
-      "commit": "385fe35"
+      "commit": "385fe35",
+      "previewUrl": "/history/v2/"
+    },
+    {
+      "id": 4,
+      "name": "Vanta Waves Era",
+      "description": "The OG. Static HTML with animated wave background, Bulma CSS, and that student energy.",
+      "date": "Jun 2022",
+      "tech": "HTML + Bulma + Vanta.js",
+      "commit": "da251fd",
+      "previewUrl": "/history/v1/"
     }
   ],
 

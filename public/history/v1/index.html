@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="https://www.flaticon.es/premium-icon/icons/svg/2115/2115955.svg" />
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" />
+        <title>José Sánchez</title>
+        <!-- fonts -->
+        <!-- https://fonts.google.com/specimen/Lora -->
+        <!-- https://fonts.google.com/specimen/Playfair+Display -->
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+        <style>
+            /* Wayback Banner Styles */
+            .wayback-banner {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                z-index: 99999;
+                background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+                border-bottom: 3px solid #0f3460;
+                padding: 12px 20px;
+                font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+                box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            }
+            .wayback-content {
+                max-width: 1200px;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+            .wayback-title {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: #e94560;
+                font-weight: 600;
+                font-size: 14px;
+                text-decoration: none !important;
+            }
+            .wayback-title:hover {
+                color: #ff6b6b;
+            }
+            .wayback-icon {
+                font-size: 20px;
+            }
+            .wayback-versions {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                flex-wrap: wrap;
+            }
+            .wayback-version {
+                padding: 6px 12px;
+                border-radius: 20px;
+                font-size: 12px;
+                font-weight: 500;
+                text-decoration: none !important;
+                transition: all 0.2s ease;
+                white-space: nowrap;
+            }
+            .wayback-version.other {
+                background: rgba(255,255,255,0.1);
+                color: #a0a0a0 !important;
+                border: 1px solid rgba(255,255,255,0.1);
+            }
+            .wayback-version.other:hover {
+                background: rgba(255,255,255,0.2);
+                color: #ffffff !important;
+            }
+            .wayback-version.current {
+                background: #e94560;
+                color: #ffffff !important;
+                border: 1px solid #e94560;
+            }
+            .wayback-close {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                padding: 8px 16px;
+                background: #0f3460;
+                color: #ffffff !important;
+                border-radius: 6px;
+                font-size: 13px;
+                font-weight: 500;
+                text-decoration: none !important;
+                transition: all 0.2s ease;
+            }
+            .wayback-close:hover {
+                background: #1a4a7a;
+            }
+            body {
+                padding-top: 70px !important;
+            }
+
+            html,
+            body {
+                font-family: "Playfair Display", serif;
+                color: white !important;
+                height: 100%;
+                background-color: black;
+                overflow-y: scroll;
+                overflow-x: hidden;
+            }
+            a {
+                font-family: "Lato", sans-serif;
+                color: white;
+                text-decoration: underline;
+            }
+            #name {
+                font-weight: 700;
+                text-align: center;
+                padding: 5% 0% 5% 2%;
+                border: 5px solid white;
+                margin: 5% 5% 2% 5%;
+            }
+            #job-title {
+                font-weight: 400;
+                line-height: normal;
+                text-align: left;
+                margin: 0% 8% 1% 8%;
+            }
+            #icons {
+                text-align: left;
+                margin-left: 8%;
+            }
+            .normal-text {
+                font-family: "Lato", sans-serif;
+                text-align: justify;
+                margin: 0% 10% 2% 8%;
+            }
+            /* If the screen size is 501px wide or more, set the font-size of
+         <div>
+         to 80px */
+            @media screen and (min-width: 501px) {
+                #name {
+                    font-size: 40px;
+                }
+                #job-title {
+                    font-size: 30px;
+                }
+                .normal-text {
+                    font-size: 20px;
+                }
+            }
+            /* If the screen size is 500px wide or less, set the font-size of
+         <div>
+         to 30px */
+            @media screen and (max-width: 500px) {
+                #name {
+                    font-size: 30px;
+                }
+                #job-title {
+                    font-size: 20px;
+                }
+                .normal-text {
+                    font-size: 15px;
+                }
+                #image {
+                    display: none;
+                }
+                .wayback-banner {
+                    padding: 10px 15px;
+                }
+                .wayback-content {
+                    justify-content: center;
+                }
+                .wayback-title span:not(.wayback-icon) {
+                    display: none;
+                }
+            }
+            /* Hide scrollbar for Chrome, Safari and Opera */
+            body::-webkit-scrollbar {
+                display: none;
+            }
+            /* Hide scrollbar for IE, Edge and Firefox */
+            body {
+                -ms-overflow-style: none;
+                /* IE and Edge */
+                scrollbar-width: none;
+                /* Firefox */
+            }
+        </style>
+    </head>
+    <body id="vanta" class="">
+        <!-- Wayback Machine Style Banner -->
+        <div class="wayback-banner">
+            <div class="wayback-content">
+                <a href="/" class="wayback-title">
+                    <span class="wayback-icon">⏳</span>
+                    <span>Portfolio Archive</span>
+                </a>
+                <div class="wayback-versions">
+                    <a href="/" class="wayback-version other">Dec 2025</a>
+                    <a href="/history/v3/" class="wayback-version other">Jan 2023</a>
+                    <a href="/history/v2/" class="wayback-version other">Aug 2022</a>
+                    <a href="/history/v1/" class="wayback-version current">Jun 2022</a>
+                </div>
+                <a href="/" class="wayback-close">
+                    ✕ Back to Current
+                </a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-half">
+                    <h1 id="name">José Sánchez</h1>
+                    <h2 id="job-title">Junior Software Engineer</h2>
+                    <div id="icons">
+                        <span class="icon is-large">
+                            <a target="_blank" href="https://github.com/sanchezpepe">
+                                <i class="fas fa-2x fab fa-github"></i>
+                            </a>
+                        </span>
+                        <span class="icon is-large">
+                            <a target="_blank" href="https://www.linkedin.com/in/sanchezjose8">
+                                <i class="fab fa-2x fa-linkedin"></i>
+                            </a>
+                        </span>
+                        <span class="icon is-large">
+                            <a target="_blank" href="https://medium.com/@sanchezpepe">
+                                <i class="fab fa-2x fa-medium"></i>
+                            </a>
+                        </span>
+                        <span class="icon is-large">
+                            <a target="_top" href+="mailto:sanchezpepe97@gmail.com">
+                                <i class="fas fa-2x fa-envelope"></i>
+                            </a>
+                        </span>
+                    </div>
+                    <p class="normal-text">
+                        I'm a Computer Engineering student at Instituto Tecnológico Autónomo de México - ITAM.
+                    </p>
+                    <p class="normal-text">
+                        Some areas I'm interested in:
+                    </p>
+                    <div class="content normal-text">
+                        <ul>
+                            <li>Web Develpment</li>
+                            <li>Artificial Intelligence</li>
+                            <li>Blockchain Technology</li>
+                            <li>Information Security</li>
+                        </ul>
+                    </div>
+                    <p class="has-text-left normal-text">
+                        Projects
+                    </p>
+                    <div class="content normal-text">
+                        <ul>
+                            <li>
+                                <a href="https://appitam.web.app/" target="_blank">Web Application for students</a>
+                                <p>
+                                    Developed for the student community a web app using Vue.js, Vueyify and Firebase to plan their schedules and track the school shuttle in real-time.
+                                </p>
+                            </li>
+                            <li>
+                                <a href="https://github.com/SanchezPepe/CryptocurrencyToMXN" target="_blank">CryptocurrencyToMXN</a>
+                                <p>
+                                    Built an Android application using Bitso Exchange API to reduce mobile data consumption and fetch Bitcoin, Ethereum, Ripple, and Bitcoin Cash prices.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="image" class="column is-half">
+                    <img src="https://assets-ouch.icons8.com/download/477/e2130db6-c561-4330-8060-af74745f790b.svg?filename=pixeltrue-web-development.svg" alt="" />
+                </div>
+            </div>
+        </div>
+        <script>
+            VANTA.WAVES({
+                el: "#vanta",
+                mouseControls: false,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 800.0,
+                minWidth: 200.0,
+                scale: 1.0,
+                scaleMobile: 1.0,
+                color: 0x0,
+            });
+        </script>
+    </body>
+</html>

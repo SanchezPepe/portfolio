@@ -51,15 +51,28 @@ const PortfolioHistory = ({ data }) => {
                 </p>
               </div>
 
-              <a
-                href={`${repoUrl}/tree/${version.commit}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 px-3 py-1.5 text-xs font-medium rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-primary hover:text-white transition-colors shrink-0"
-              >
-                <span className="material-symbols-outlined text-[14px]">code</span>
-                View Code
-              </a>
+              <div className="flex gap-2 shrink-0">
+                {version.previewUrl && (
+                  <a
+                    href={version.previewUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 px-3 py-1.5 text-xs font-medium rounded-lg bg-primary text-white hover:bg-blue-700 transition-colors"
+                  >
+                    <span className="material-symbols-outlined text-[14px]">visibility</span>
+                    View Live
+                  </a>
+                )}
+                <a
+                  href={`${repoUrl}/tree/${version.commit}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 px-3 py-1.5 text-xs font-medium rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-primary hover:text-white transition-colors"
+                >
+                  <span className="material-symbols-outlined text-[14px]">code</span>
+                  View Code
+                </a>
+              </div>
             </div>
           </div>
         ))}
