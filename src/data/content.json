@@ -268,7 +268,7 @@
       "date": "Jan 2023",
       "tech": "Vue.js",
       "commit": "4b62569",
-      "previewUrl": "/history/v3/"
+      "previewUrl": "./history/v3/"
     },
     {
       "id": 3,
@@ -277,7 +277,7 @@
       "date": "Aug 2022",
       "tech": "Vue.js + Tailwind CSS",
       "commit": "385fe35",
-      "previewUrl": "/history/v2/"
+      "previewUrl": "./history/v2/"
     },
     {
       "id": 4,
@@ -286,7 +286,7 @@
       "date": "Jun 2022",
       "tech": "HTML + Bulma + Vanta.js",
       "commit": "da251fd",
-      "previewUrl": "/history/v1/"
+      "previewUrl": "./history/v1/"
     }
   ],
 
