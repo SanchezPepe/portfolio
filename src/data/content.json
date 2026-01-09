@@ -275,6 +275,14 @@
       "date": "Aug 2022",
       "tech": "Vue.js + Tailwind CSS",
       "commit": "385fe35"
+    },
+    {
+      "id": 4,
+      "name": "Vanta Waves Era",
+      "description": "The OG. Static HTML with animated wave background, Bulma CSS, and that student energy.",
+      "date": "Jun 2022",
+      "tech": "HTML + Bulma + Vanta.js",
+      "commit": "da251fd"
     }
   ],
 
