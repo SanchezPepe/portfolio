@@ -7,7 +7,7 @@ import Languages from './components/Languages';
 import Education from './components/Education';
 import Interests from './components/Interests';
 import FunStats from './components/FunStats';
-import PortfolioHistory from './components/PortfolioHistory';
+import WaybackBanner from './components/WaybackBanner';
 import Footer from './components/Footer';
 import { useDarkMode } from './hooks/useDarkMode';
 import contentData from './data/content.json';
@@ -18,7 +18,8 @@ function App() {
 
   return (
     <>
-      <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
+      <WaybackBanner data={contentData} />
+      <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 pb-8 lg:pt-24 lg:pb-12">
         {/* Hero Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4 mb-3 lg:mb-4">
           <Hero data={contentData} isDark={isDark} toggleDarkMode={toggleDarkMode} />
@@ -48,11 +49,6 @@ function App() {
           <div className="w-full lg:w-1/4">
             <Interests data={contentData} />
           </div>
-        </div>
-
-        {/* Portfolio History */}
-        <div className="mb-3 lg:mb-4">
-          <PortfolioHistory data={contentData} />
         </div>
 
         <Footer data={contentData} />
