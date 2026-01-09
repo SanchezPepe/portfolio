@@ -7,6 +7,7 @@ import Languages from './components/Languages';
 import Education from './components/Education';
 import Interests from './components/Interests';
 import FunStats from './components/FunStats';
+import PortfolioHistory from './components/PortfolioHistory';
 import Footer from './components/Footer';
 import { useDarkMode } from './hooks/useDarkMode';
 import contentData from './data/content.json';
@@ -36,7 +37,7 @@ function App() {
         </div>
 
         {/* Bottom Row: Skills (50%) + Languages/Stats (25%) + Interests (25%) */}
-        <div className="flex flex-col lg:flex-row gap-3 lg:gap-4">
+        <div className="flex flex-col lg:flex-row gap-3 lg:gap-4 mb-3 lg:mb-4">
           <div className="w-full lg:w-1/2">
             <Skills data={contentData} />
           </div>
@@ -47,6 +48,11 @@ function App() {
           <div className="w-full lg:w-1/4">
             <Interests data={contentData} />
           </div>
+        </div>
+
+        {/* Portfolio History */}
+        <div className="mb-3 lg:mb-4">
+          <PortfolioHistory data={contentData} />
         </div>
 
         <Footer data={contentData} />

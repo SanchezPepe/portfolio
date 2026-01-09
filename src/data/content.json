@@ -251,6 +251,33 @@
     }
   ],
 
+  "portfolioHistory": [
+    {
+      "id": 1,
+      "name": "Bento Grid Era",
+      "description": "Modern React portfolio with a bento-style grid layout, dark mode, and interactive components.",
+      "date": "Dec 2025",
+      "tech": "React + Tailwind CSS",
+      "commit": "main"
+    },
+    {
+      "id": 2,
+      "name": "Minimalist Era",
+      "description": "Stripped down to essentials. Dark background, serif font, just the basics.",
+      "date": "Jan 2023",
+      "tech": "Vue.js",
+      "commit": "4b62569"
+    },
+    {
+      "id": 3,
+      "name": "Two-Column Era",
+      "description": "Split layout with personal info on one side and projects on the other.",
+      "date": "Aug 2022",
+      "tech": "Vue.js + Tailwind CSS",
+      "commit": "385fe35"
+    }
+  ],
+
   "footer": {
     "copyright": "José Sánchez",
     "social": [
